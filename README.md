@@ -131,6 +131,8 @@ Before importing/restoring the Omni snapshot, you must add my regex patterns lin
 2. Go to **Settings → Regex Patterns**
 3. Paste/import this link:
 
+https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/omni-regex_02-06_11-25-28.omni.json
+OR
 https://files.catbox.moe/x611rs.json
 
 This must be done **before** restoring the snapshot, because the snapshot will apply the regex styling and colors inside Omni.
