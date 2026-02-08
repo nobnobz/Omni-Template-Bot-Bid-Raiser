@@ -93,7 +93,8 @@ Download all four `.json` files provided in this repo.
 2. Go to **Save & Install → Import → Import Template**
 3. Import the AIOStreams template  
 4. Add your Debrid provider details and API keys under **Services** (only if you didn’t already add them during the template import)
-5. If you want to add another language than English go to Filters and add your preferred language
+5. Optional: If you want to add another language than English go to Filters and add your preferred language
+6. Optional: If your are using TorBox enable the TB Search Addon in AIOStreams
 
 **Important:** At the moment you must use an **AIOStreams Nightly** instance for this template to work.  
 Use either of these:
