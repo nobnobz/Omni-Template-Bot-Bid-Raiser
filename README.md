@@ -196,12 +196,19 @@ You can change the look of the tags (including **colors**) or disable specific t
 
 This is where you can adjust the regex styling to your preference.
 
-## Stream limits in **AIOStreams** are set to **12 streams**. 
+### Stream limits in **AIOStreams** are set to **12 streams**. 
 If you want more streams go to AIOStreams, Filters and delete or edit "/*Global Result Limit: 12*/slice(negate(merge(library(streams), cached(seadex(streams))), streams), 12)" under "EXCLUDED STREAM EXPRESSIONS" 
+
+## Artwork
+**Actors/Directors:** https://postimg.cc/gallery/3kjchpC
+**Genres:** https://postimg.cc/gallery/VsT9R6V
+**Decades:** https://postimg.cc/gallery/v5hCxKd
+**Streaming Services & Trending/Latest:** https://postimg.cc/gallery/gXh7xgR
 
 ## Credits
 - AIOStreams community templates and formatter/SEL inspiration
 - Regex sources referenced in the changelog (Vidhin, Tam, !Yuno)
-- everyone who helped me on Discord setting this up
+- Some of the Artwork is used or inspired from houndReaper
+- Everyone who helped me on Discord setting this up
 
 ---
