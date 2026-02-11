@@ -1,0 +1,4222 @@
+{
+  "version": "1.26.3",
+  "exportedAt": "2026-02-11T09:08:36.875Z",
+  "config": {
+    "language": "en-US",
+    "includeAdult": false,
+    "blurThumbs": false,
+    "showPrefix": false,
+    "showMetaProviderAttribution": false,
+    "castCount": 15,
+    "sfw": true,
+    "hideUnreleasedDigital": true,
+    "providers": {
+      "movie": "tmdb",
+      "series": "tvdb",
+      "anime": "mal",
+      "anime_id_provider": "imdb",
+      "forceAnimeForDetectedImdb": false
+    },
+    "artProviders": {
+      "movie": {
+        "poster": "meta",
+        "background": "meta",
+        "logo": "meta"
+      },
+      "series": {
+        "poster": "meta",
+        "background": "meta",
+        "logo": "meta"
+      },
+      "anime": {
+        "poster": "mal",
+        "background": "mal",
+        "logo": "meta"
+      },
+      "englishArtOnly": true
+    },
+    "tvdbSeasonType": "default",
+    "mal": {
+      "skipFiller": false,
+      "skipRecap": false,
+      "allowEpisodeMarking": false,
+      "useImdbIdForCatalogAndSearch": false
+    },
+    "tmdb": {
+      "scrapeImdb": true,
+      "forceLatinCastNames": true
+    },
+    "apiKeys": {
+      "gemini": "",
+      "tmdb": "",
+      "tvdb": "",
+      "fanart": "",
+      "rpdb": "",
+      "topPoster": "",
+      "mdblist": ""
+    },
+    "ageRating": "None",
+    "searchEnabled": true,
+    "sessionId": "e925f88f5ab74248b5288757803c0fed3925fe1d",
+    "catalogs": [
+      {
+        "id": "mdblist.2236",
+        "type": "movie",
+        "name": "[Top] Movies for Header",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "metadata": {
+          "itemCount": 10,
+          "author": "garycrawfordgc"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.11754",
+        "type": "movie",
+        "name": "[Top] 30 Movies of the Week",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 30,
+          "author": "edd1e21",
+          "url": "https://mdblist.com/lists/edd1e21/top-30-movies-of-the-week"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.11753",
+        "type": "series",
+        "name": "[Top] 30 Shows of the Week",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 30,
+          "author": "edd1e21",
+          "url": "https://mdblist.com/lists/edd1e21/top-30-shows-of-the-week"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.88302",
+        "type": "movie",
+        "name": "[Trending] Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/trending-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.88303",
+        "type": "series",
+        "name": "[Trending] Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/trending-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.86934",
+        "type": "movie",
+        "name": "[Latest] Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-movies-digital-release"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.86710",
+        "type": "series",
+        "name": "[Latest] Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.110250",
+        "type": "series",
+        "name": "[Trending] Trakt's Trending Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 98,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/popular-on-imdb-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.87667",
+        "type": "movie",
+        "name": "[Trending] Trakt's Trending Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.86752",
+        "type": "movie",
+        "name": "[Service] Netflix Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-netflix-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.86751",
+        "type": "series",
+        "name": "[Service] Netflix Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-netflix-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.86755",
+        "type": "movie",
+        "name": "[Service] Amazon Prime Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-amazon-prime-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.86753",
+        "type": "series",
+        "name": "[Service] Amazon Prime Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-amazon-prime-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.86757",
+        "type": "movie",
+        "name": "[Service] Apple TV Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 63,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-apple-tv-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.86756",
+        "type": "series",
+        "name": "[Service] Apple TV Shows Alternative",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 136,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-apple-tv-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "streaming.atp",
+        "name": "[Service] Apple TV Shows",
+        "type": "series",
+        "source": "streaming",
+        "enabled": true,
+        "showInHome": true,
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.86759",
+        "type": "movie",
+        "name": "[Service] Disney+ Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-disney-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.86758",
+        "type": "series",
+        "name": "[Service] Disney+ Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-disney-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.86762",
+        "type": "movie",
+        "name": "[Service] Paramount+ Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 142,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-paramount-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.86761",
+        "type": "series",
+        "name": "[Service]  Paramount+ Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 199,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-paramount-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.89647",
+        "type": "movie",
+        "name": "[Service] HBO Max Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-hbo-max-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.89649",
+        "type": "series",
+        "name": "[Service] HBO Max Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-hbo-max-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.127955",
+        "type": "movie",
+        "name": "[Service] Hulu Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-hulu-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.127954",
+        "type": "series",
+        "name": "[Service] Hulu Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-hulu-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.83487",
+        "type": "movie",
+        "name": "[Service] Peacock Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.83484",
+        "type": "series",
+        "name": "[Service] Peacock Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "series"
+      },
+      {
+        "id": "streaming.cru",
+        "name": "[Service] Crunchyroll Movies",
+        "type": "movie",
+        "source": "streaming",
+        "enabled": true,
+        "showInHome": true,
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "displayType": "anime"
+      },
+      {
+        "id": "streaming.cru",
+        "name": "[Service] Crunchyroll Shows",
+        "type": "series",
+        "source": "streaming",
+        "enabled": true,
+        "showInHome": true,
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "displayType": "anime"
+      },
+      {
+        "id": "mdblist.88328",
+        "type": "movie",
+        "name": "[Top] Netflix Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/netflix-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.88329",
+        "type": "series",
+        "name": "[Top] Netflix Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/netflix-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.3095",
+        "type": "movie",
+        "name": "[Top] Disney+ Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "garycrawfordgc",
+          "url": "https://mdblist.com/lists/garycrawfordgc/disney-movies",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.88323",
+        "type": "series",
+        "name": "[Top] Disney+ Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/disney-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.88317",
+        "type": "movie",
+        "name": "[Top] Apple TV Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 105,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/apple-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.7444",
+        "type": "series",
+        "name": "[Top] Apple TV Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "imdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 199,
+          "author": "Jibby93",
+          "url": "https://mdblist.com/lists/jibby93/apple-tv-shows-2025"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.88332",
+        "type": "movie",
+        "name": "[Top] Prime Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/prime-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.88333",
+        "type": "series",
+        "name": "[Top] Prime Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/prime-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.88324",
+        "type": "movie",
+        "name": "[Top] HBO Max Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/max-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.88325",
+        "type": "series",
+        "name": "[Top] HBO Max Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/max-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.88330",
+        "type": "movie",
+        "name": "[Top] Paramount+ Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/paramount-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.88331",
+        "type": "series",
+        "name": "[Top] Paramount+ Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 122,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/paramount-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "tmdb.trending",
+        "name": "[Trending] TMDB Trending Movies",
+        "type": "movie",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false,
+        "displayType": "movie"
+      },
+      {
+        "id": "tmdb.trending",
+        "name": "[Trending] TMDB Trending Shows",
+        "type": "series",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false,
+        "displayType": "series"
+      },
+      {
+        "id": "tmdb.top",
+        "name": "TMDB Popular",
+        "type": "movie",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tmdb.top",
+        "name": "TMDB Popular",
+        "type": "series",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tmdb.year",
+        "name": "TMDB By Year",
+        "type": "movie",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tmdb.year",
+        "name": "TMDB By Year",
+        "type": "series",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tmdb.language",
+        "name": "TMDB By Language",
+        "type": "movie",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tmdb.language",
+        "name": "TMDB By Language",
+        "type": "series",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tvdb.trending",
+        "name": "TVDB Trending",
+        "type": "movie",
+        "source": "tvdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tvdb.trending",
+        "name": "TVDB Trending",
+        "type": "series",
+        "source": "tvdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tvdb.genres",
+        "name": "TVDB Genres",
+        "type": "movie",
+        "source": "tvdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tvdb.genres",
+        "name": "TVDB Genres",
+        "type": "series",
+        "source": "tvdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tvdb.collections",
+        "name": "TVDB Collections",
+        "type": "series",
+        "source": "tvdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.airing",
+        "name": "MAL Airing Now",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.upcoming",
+        "name": "MAL Upcoming Season",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.schedule",
+        "name": "MAL Airing Schedule",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.seasons",
+        "name": "MAL Seasons",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.80sDecade",
+        "name": "MAL Best of 80s",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.90sDecade",
+        "name": "MAL Best of 90s",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.00sDecade",
+        "name": "MAL Best of 2000s",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.10sDecade",
+        "name": "MAL Best of 2010s",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.20sDecade",
+        "name": "MAL Best of 2020s",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.genres",
+        "name": "MAL Genres",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.studios",
+        "name": "MAL By Studio",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.top_movies",
+        "name": "MAL Top Movies",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.top_series",
+        "name": "MAL Top Series",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.most_favorites",
+        "name": "MAL Most Favorites",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.most_popular",
+        "name": "MAL Most Popular",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mal.top_anime",
+        "name": "MAL Top Anime",
+        "type": "anime",
+        "source": "mal",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tmdb.favorites",
+        "name": "TMDB Favorites (Movies)",
+        "type": "movie",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tmdb.favorites",
+        "name": "TMDB Favorites (Series)",
+        "type": "series",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tmdb.watchlist",
+        "name": "TMDB Watchlist (Movies)",
+        "type": "movie",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tmdb.watchlist",
+        "name": "TMDB Watchlist (Series)",
+        "type": "series",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mdblist.125119",
+        "type": "series",
+        "name": "Universe - Dune",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard"
+      },
+      {
+        "id": "mdblist.104199",
+        "type": "series",
+        "name": "John Wick Universe",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard"
+      },
+      {
+        "id": "mdblist.16826",
+        "type": "series",
+        "name": "Rocky / Creed",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard"
+      },
+      {
+        "id": "mdblist.59317",
+        "type": "movie",
+        "name": "Arnold Schwarzenegger",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard"
+      },
+      {
+        "id": "mdblist.9882",
+        "type": "movie",
+        "name": "Clint Eastwood Westerns",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard"
+      },
+      {
+        "id": "mdblist.57180",
+        "type": "movie",
+        "name": "Denzel Washington",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard"
+      },
+      {
+        "id": "mdblist.7227",
+        "type": "movie",
+        "name": "Jackie Chan List Movies",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard"
+      },
+      {
+        "id": "mdblist.64730",
+        "type": "movie",
+        "name": "Sylvester Stallone",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard"
+      },
+      {
+        "id": "mdblist.91031",
+        "type": "movie",
+        "name": "Alfred Hitchcock",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard"
+      },
+      {
+        "id": "mdblist.2407",
+        "type": "movie",
+        "name": "[Genre] Action Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 537,
+          "author": "hdlists"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.91213",
+        "type": "series",
+        "name": "[Genre] Action Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.2195",
+        "type": "movie",
+        "name": "[Genre] Comedy Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 4022,
+          "author": "hdlists",
+          "url": "https://mdblist.com/lists/hdlists/comedy-movies-top-rated-from-1960-to-today"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.91224",
+        "type": "series",
+        "name": "[Genre] Comedy Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.2416",
+        "type": "movie",
+        "name": "[Genre] Mystery Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1748,
+          "author": "hdlists",
+          "url": "https://mdblist.com/lists/hdlists/mystery-movies-top-rated-from-1980-to-today"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.6614",
+        "type": "series",
+        "name": "[Genre] Mystery Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "metadata": {
+          "itemCount": 835,
+          "author": "MaxtronTV"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.2415",
+        "type": "movie",
+        "name": "[Genre] Family Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 843,
+          "author": "hdlists",
+          "url": "https://mdblist.com/lists/hdlists/family-movies-top-rated-from-1980-to-today"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.6605",
+        "type": "series",
+        "name": "[Genre] Family Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "metadata": {
+          "itemCount": 680,
+          "author": "MaxtronTV"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.2411",
+        "type": "movie",
+        "name": "[Genre] Crime Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1180,
+          "author": "hdlists",
+          "url": "https://mdblist.com/lists/hdlists/crime-movies-top-rated-from-1980-to-today"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.3126",
+        "type": "series",
+        "name": "[Genre] Crime Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.91893",
+        "type": "movie",
+        "name": "[Genre] Thriller Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.91894",
+        "type": "series",
+        "name": "[Genre] Thriller Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.2408",
+        "type": "movie",
+        "name": "[Genre] Drama Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 3731,
+          "author": "hdlists",
+          "url": "https://mdblist.com/lists/hdlists/drama-movies-top-rated-from-1980-to-today"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.91297",
+        "type": "series",
+        "name": "[Genre] Drama Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.128261",
+        "type": "movie",
+        "name": "[Genre] Romance Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/latest-romance-movies",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.6617",
+        "type": "series",
+        "name": "[Genre] Romance Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "metadata": {
+          "itemCount": 279,
+          "author": "MaxtronTV"
+        },
+        "displayType": "series",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.2412",
+        "type": "movie",
+        "name": "[Genre] Fantasy/Sci-Fi Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 881,
+          "author": "hdlists",
+          "url": "https://mdblist.com/lists/hdlists/fantasy-sci-fi-movies-top-rated-from-1980-to-today"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.91221",
+        "type": "series",
+        "name": "[Genre] Fantasy/Sci-Fi Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.116037",
+        "type": "movie",
+        "name": "[Genre] Animated Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.116038",
+        "type": "series",
+        "name": "[Genre] Animated Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.2410",
+        "type": "movie",
+        "name": "[Genre] Horror Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 898,
+          "author": "hdlists",
+          "url": "https://mdblist.com/lists/hdlists/horror-movies-top-rated-from-1960-to-today"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.91217",
+        "type": "series",
+        "name": "[Genre] Horror Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.84677",
+        "type": "movie",
+        "name": "[Genre] Documentary Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/top-documentaries-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.84403",
+        "type": "series",
+        "name": "[Genre] Documentary Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.3892",
+        "type": "movie",
+        "name": "[Genre] Mindfuck Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 286,
+          "author": "hdlists",
+          "url": "https://mdblist.com/lists/hdlists/mindfuck-movies",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.136620",
+        "type": "movie",
+        "name": "[Genre] Seasonal",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "usort",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 272,
+          "author": "tamtaro",
+          "url": "https://mdblist.com/lists/tamtaro/seasonal"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.8113",
+        "type": "movie",
+        "name": "[Genre] Christmas Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "imdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "metadata": {
+          "itemCount": 149,
+          "author": "hdlists"
+        },
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.126338",
+        "type": "movie",
+        "name": "[Genre] Christmas Movies 2",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 302,
+          "author": "snoak"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.136229",
+        "type": "movie",
+        "name": "[Genre] Österreichischer Film",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 150,
+          "author": "nobnob"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.115239",
+        "type": "movie",
+        "name": "[Genre] Adventure Movies",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.124146",
+        "type": "movie",
+        "name": "[Genre] War Movies",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.58356",
+        "type": "movie",
+        "name": "[Genre] Musical Movies",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.136107",
+        "type": "series",
+        "name": "[Genre] Österreichische Serien",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 37,
+          "author": "nobnob"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.84401",
+        "type": "series",
+        "name": "[Genre] Top Reality TV",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "tvgeniekodi",
+          "url": "https://mdblist.com/lists/tvgeniekodi/top-reality-tv"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.130778",
+        "type": "movie",
+        "name": "[Genre] KDrama Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 518,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/popular-kdrama-movies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.7577",
+        "type": "series",
+        "name": "[Genre] KDrama Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 282,
+          "author": "archangelius",
+          "url": "https://mdblist.com/lists/archangelius/popular-kdrama"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.88468",
+        "type": "movie",
+        "name": "[Genre] Anime Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/trending-anime-movies",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.88469",
+        "type": "series",
+        "name": "[Genre] Anime Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/trending-anime-shows",
+          "mediatype": "show"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.101881",
+        "type": "movie",
+        "name": "[Collection] IMDb Top 250 Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "random",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 250,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/top-250-movies-imdb"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.101882",
+        "type": "series",
+        "name": "[Collection] IMDb Top 250 Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "imdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 244,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/top-250-shows-imdb"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.3022",
+        "type": "movie",
+        "name": "[Collection] Marvel Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.143882",
+        "type": "all",
+        "name": "[Collection] John Wick Universe",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "usort",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 6,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/john-wick-universe"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "mdblist.128063",
+        "type": "series",
+        "name": "[Collection] Marvel Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "metadata": {
+          "itemCount": 26,
+          "author": "snoak"
+        },
+        "displayType": "series",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.143865",
+        "type": "movie",
+        "name": "[Collection] The Godfather",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 3,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/the-godfather-collection"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.143885",
+        "type": "movie",
+        "name": "[Collection] Eberhofer Krimis",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 9,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/eberhofer-krimis"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.143870",
+        "type": "all",
+        "name": "[Collection] Star Trek Universe",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "usort",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 24,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/star-trek-universe"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "mdblist.94304",
+        "type": "movie",
+        "name": "[Collection] Lord of the Rings and Hobbit",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.105063",
+        "type": "movie",
+        "name": "[Collection] Harry Potter",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 11,
+          "author": "muhiso",
+          "url": "https://mdblist.com/lists/muhiso/harry-potter"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.31309",
+        "type": "movie",
+        "name": "[Collection] Mission Impossible",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.143863",
+        "type": "all",
+        "name": "[Collection] Star Wars Universe",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "usort",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 24,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/star-wars-universe"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "mdblist.125124",
+        "type": "movie",
+        "name": "[Collection] Pirates of the Caribbean",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 6,
+          "author": "andyhawks",
+          "url": "https://mdblist.com/lists/andyhawks/universe-pirates-of-the-caribbean"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.31324",
+        "type": "movie",
+        "name": "[Collection] Rambo",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 5,
+          "author": "wheezer0610",
+          "url": "https://mdblist.com/lists/wheezer0610/rambo",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.125458",
+        "type": "all",
+        "name": "[Collection] Terminator Universe",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 9,
+          "author": "andyhawks",
+          "url": "https://mdblist.com/lists/andyhawks/universe-the-terminator"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "mdblist.143866",
+        "type": "movie",
+        "name": "[Collection] Dune",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "usort",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 4,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/dune-collection"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.143867",
+        "type": "movie",
+        "name": "[Collection] Avatar",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 4,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/avatar-collection"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.59631",
+        "type": "movie",
+        "name": "[Collection] Fast and Furious",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.143868",
+        "type": "movie",
+        "name": "[Collection] Hunger Games",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "usort",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 6,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/hunger-games-collection"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.98039",
+        "type": "movie",
+        "name": "[Collection] DC Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "metadata": {
+          "itemCount": 43,
+          "author": "chandu6889"
+        },
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.105130",
+        "type": "series",
+        "name": "[Collection] DC Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "metadata": {
+          "itemCount": 24,
+          "author": "muhiso"
+        },
+        "displayType": "series",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.7947",
+        "type": "movie",
+        "name": "[Collection] James Bond",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 27,
+          "author": "hdlists",
+          "url": "https://mdblist.com/lists/hdlists/james-bond-movies?s_traktid=&s_action=&s_list_id=&s_list_name=&s_trakt=&sort=released&sortorder=asc&q_current_page=0"
+        },
+        "displayType": "movie",
+        "randomizePerPage": false
+      },
+      {
+        "id": "mdblist.125120",
+        "type": "series",
+        "name": "[Collection] Indiana Jones",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.125146",
+        "type": "series",
+        "name": "[Collection] Jurassic Park",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.8682",
+        "type": "movie",
+        "name": "[Collection] Transformers",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.98353",
+        "type": "series",
+        "name": "[Collection] Matrix",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "desc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.2820",
+        "type": "movie",
+        "name": "[Year] Popular 1970s Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "imdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "metadata": {
+          "itemCount": 250,
+          "author": "rjchignell"
+        },
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.91301",
+        "type": "movie",
+        "name": "[Year] Popular 1980s Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "imdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.91300",
+        "type": "movie",
+        "name": "[Year] Popular 1990s Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "imdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.91302",
+        "type": "movie",
+        "name": "[Year] Popular 2000s Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "imdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.91303",
+        "type": "movie",
+        "name": "[Year] Popular 2010s Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "imdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.91304",
+        "type": "movie",
+        "name": "[Year] Popular 2020s Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "imdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "tmdb.top_rated",
+        "name": "TMDB Top Rated",
+        "type": "movie",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tmdb.top_rated",
+        "name": "TMDB Top Rated",
+        "type": "series",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tmdb.airing_today",
+        "name": "TMDB Airing Today",
+        "type": "series",
+        "source": "tmdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tvdb.collections",
+        "name": "TVDB Collections",
+        "type": "movie",
+        "source": "tvdb",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "tvmaze.schedule",
+        "name": "TVmaze Daily Schedule",
+        "type": "series",
+        "source": "tvmaze",
+        "enabled": false,
+        "showInHome": false
+      },
+      {
+        "id": "mdblist.143640",
+        "type": "movie",
+        "name": "[Actor] Sandra Bullock Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 40,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-sandra-bullock-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143641",
+        "type": "movie",
+        "name": "[Actor] Jennifer Lawrance Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 25,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-jennifer-lawrance-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143642",
+        "type": "movie",
+        "name": "[Actor] Brad Pitt Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 53,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-brad-pitt-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143643",
+        "type": "movie",
+        "name": "[Actor] Angelina Jolie Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 39,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-angelina-jolie-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143645",
+        "type": "movie",
+        "name": "[Actor] Matt Damon Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 55,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-matt-damon-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143646",
+        "type": "movie",
+        "name": "[Actor] Jason Statham Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 44,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-jason-statham-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143650",
+        "type": "movie",
+        "name": "[Actor] Adam Sandler Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 51,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-adam-sandler-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143651",
+        "type": "movie",
+        "name": "[Actor] Morgan Freeman Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 70,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-morgan-freeman-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143653",
+        "type": "movie",
+        "name": "[Actor] Anne Hathaway Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 39,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-anne-hathaway-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143654",
+        "type": "movie",
+        "name": "[Actor] Jim Carrey Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 34,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-jim-carrey-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143658",
+        "type": "movie",
+        "name": "[Actor] Bill Murray Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 63,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-bill-murray-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143659",
+        "type": "movie",
+        "name": "[Actor] Ben Stiller Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 48,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-ben-stiller-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143660",
+        "type": "movie",
+        "name": "[Actor] Owen Wilson Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 53,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-owen-wilson-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143661",
+        "type": "movie",
+        "name": "[Actor] Jonah Hill Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 34,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-jonah-hill-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143662",
+        "type": "movie",
+        "name": "[Actor] Margot Robbie Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 24,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-margot-robbie-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143663",
+        "type": "movie",
+        "name": "[Actor] Daniel Craig Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 39,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-daniel-craig-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143644",
+        "type": "movie",
+        "name": "[Actor] Samuel L. Jackson Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 116,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-samuel-l-jackson-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143717",
+        "type": "series",
+        "name": "[Actor] Samuel L. Jackson Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 9,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-samuel-l-jackson-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143673",
+        "type": "movie",
+        "name": "[Actor] Florence Pugh Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 18,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-florence-pugh-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143716",
+        "type": "series",
+        "name": "[Actor] Florence Pugh Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 4,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-florence-pugh-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143652",
+        "type": "movie",
+        "name": "[Actor] Nicolas Cage Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 74,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-nicolas-cage-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143715",
+        "type": "series",
+        "name": "[Actor] Nicolas Cage Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-nicolas-cage-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143675",
+        "type": "movie",
+        "name": "[Actor] Lily Collins Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 18,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-lily-collins-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143714",
+        "type": "series",
+        "name": "[Actor] Lily Collins Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 3,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-lily-collins-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143678",
+        "type": "movie",
+        "name": "[Actor] Sydney Sweeney Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 18,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-sydney-sweeney-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143713",
+        "type": "series",
+        "name": "[Actor] Sydney Sweeney Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 5,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-sydney-sweeney-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143669",
+        "type": "movie",
+        "name": "[Actor] Steve Carell Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 41,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-steve-carell-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143712",
+        "type": "series",
+        "name": "[Actor] Steve Carell Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 6,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-steve-carell-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143665",
+        "type": "movie",
+        "name": "[Actor] Millie Bobby Brown Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 7,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-millie-bobby-brown-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143710",
+        "type": "series",
+        "name": "[Actor] Millie Bobby Brown Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 2,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-millie-bobby-brown-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143667",
+        "type": "movie",
+        "name": "[Actor] Reese Witherspoon Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 41,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-reese-witherspoon-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143709",
+        "type": "series",
+        "name": "[Actor] Reese Witherspoon Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 6,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-reese-witherspoon-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143664",
+        "type": "movie",
+        "name": "[Actor] Jennifer Aniston Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 40,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-jennifer-aniston-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143708",
+        "type": "series",
+        "name": "[Actor] Jennifer Aniston Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 2,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-jennifer-aniston-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143648",
+        "type": "movie",
+        "name": "[Actor] Harrison Ford Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 46,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-harrison-ford-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143706",
+        "type": "series",
+        "name": "[Actor] Harrison Ford Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 2,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-harrison-ford-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143681",
+        "type": "movie",
+        "name": "[Actor] Nicole Kidman Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 66,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-nicole-kidman-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143704",
+        "type": "series",
+        "name": "[Actor] Nicole Kidman Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 9,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-nicole-kidman-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143696",
+        "type": "movie",
+        "name": "[Actor] Robert Downey Jr. Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 61,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/actor-robert-downey-jr-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143365",
+        "type": "movie",
+        "name": "[Actor] Robert Downey Jr. Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 3,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/robert-downey-jr-shows"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.143691",
+        "type": "movie",
+        "name": "[Actor] Julia Roberts Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 50,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/actor-julia-roberts-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143358",
+        "type": "movie",
+        "name": "[Actor] Julia Roberts Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 2,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/julia-roberts-shows"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.143680",
+        "type": "movie",
+        "name": "[Actor] Michael \"Bully\" Herbig Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 18,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-michael-bully-herbig-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.136695",
+        "type": "movie",
+        "name": "[Actor] Michael „Bully“ Herbig Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 5,
+          "author": "nobnob"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.143677",
+        "type": "movie",
+        "name": "[Actor] Emma Stone Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 27,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-emma-stone-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.136709",
+        "type": "movie",
+        "name": "[Actor] Emma Stone Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 3,
+          "author": "nobnob"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.143672",
+        "type": "movie",
+        "name": "[Actor] Katherine Heigl Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 30,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-katherine-heigl-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.136706",
+        "type": "movie",
+        "name": "[Actor] Katherine Heigl Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 6,
+          "author": "nobnob"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.143682",
+        "type": "movie",
+        "name": "[Actor] Robin Williams Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 63,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-robin-williams-movies-dmhh5w480q"
+        }
+      },
+      {
+        "id": "mdblist.142242",
+        "type": "movie",
+        "name": "[Actor] Robin Williams Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 2,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/robin-williams-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.143686",
+        "type": "movie",
+        "name": "[Actor] Zendaya Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 11,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/actor-zendaya-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.142241",
+        "type": "movie",
+        "name": "[Actor] Zendaya Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 2,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/zendaya-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.143639",
+        "type": "movie",
+        "name": "[Actor] Dwayne Johnson Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 44,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-dwayne-johnsons",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.142243",
+        "type": "movie",
+        "name": "[Actor] Dwayne Johnson Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 2,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/dwayne-johnson-shows"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.143656",
+        "type": "movie",
+        "name": "[Actor] Channing Tatum Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 47,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-channing-tatum-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.136686",
+        "type": "movie",
+        "name": "[Actor] Channing Tatum Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 2,
+          "author": "nobnob"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.143688",
+        "type": "movie",
+        "name": "[Actor] Jenna Ortega Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 18,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/actor-jenna-ortega-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143705",
+        "type": "series",
+        "name": "[Actor] Jenna Ortega Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 6,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-jenna-ortega-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143666",
+        "type": "movie",
+        "name": "[Actor] Mila Kunis Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 31,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-mila-kunis-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.136678",
+        "type": "movie",
+        "name": "[Actor] Mila Kunis Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 5,
+          "author": "nobnob"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.143668",
+        "type": "movie",
+        "name": "[Actor] Matthew McConaughey Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 49,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-matthew-mcconaughey-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.136684",
+        "type": "movie",
+        "name": "[Actor] Matthew McConaughey Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 3,
+          "author": "nobnob"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.143670",
+        "type": "movie",
+        "name": "[Actor] Melissa McCarthy Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 32,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-melissa-mccarthy-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.136692",
+        "type": "movie",
+        "name": "[Actor] Melissa McCarthy Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 6,
+          "author": "nobnob"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.143671",
+        "type": "movie",
+        "name": "[Actor] Jack Black Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 54,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-jack-black-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.136700",
+        "type": "movie",
+        "name": "[Actor] Jack Black Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 4,
+          "author": "nobnob"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.143637",
+        "type": "movie",
+        "name": "[Actor] Johnny Depp Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 53,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-johnny-depp-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143373",
+        "type": "movie",
+        "name": "[Actor] Johnny Depp Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/johnny-depp-shows"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.143685",
+        "type": "movie",
+        "name": "[Actor] Tom Holland Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 21,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/actor-tom-holland-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143374",
+        "type": "movie",
+        "name": "[Actor] Tom Holland Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 2,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/tom-holland-shows"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.143687",
+        "type": "movie",
+        "name": "[Actor] Leonardo DiCaprio Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 33,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/actor-leonardo-dicaprio-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143689",
+        "type": "movie",
+        "name": "[Actor] Ryan Reynolds Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 53,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/actor-ryan-reynolds-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143692",
+        "type": "movie",
+        "name": "[Actor] Tom Cruise Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 44,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/actor-tom-cruise-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143694",
+        "type": "movie",
+        "name": "[Actor] Meryl Streep Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 62,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/actor-meryl-streep-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143657",
+        "type": "movie",
+        "name": "[Actor] George Clooney Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 43,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-george-clooney-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143720",
+        "type": "series",
+        "name": "[Actor] George Clooney Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 4,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-george-clooney-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.143690",
+        "type": "movie",
+        "name": "[Actor] Benedict Cumberbatch Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 48,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/actor-benedict-cumberbatch-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143718",
+        "type": "series",
+        "name": "[Actor] Benedict Cumberbatch Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 10,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-benedict-cumberbatch-shows",
+          "mediatype": "show"
+        }
+      },
+      {
+        "id": "mdblist.145242",
+        "type": "movie",
+        "name": "[Actor] Denzel Washington Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 46,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-denzel-washington-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.53976",
+        "type": "movie",
+        "name": "[Director] Alfred Hitchcock",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 43,
+          "author": "jeffporn",
+          "url": "https://mdblist.com/lists/jeffporn/hitchcocks-best",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.91028",
+        "type": "movie",
+        "name": "[Director] Stanley Kubrick",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 16,
+          "author": "mawsa",
+          "url": "https://mdblist.com/lists/mawsa/stanley-kubrick",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.85399",
+        "type": "movie",
+        "name": "[Director] Peter Jackson",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 14,
+          "author": "mulanzo1",
+          "url": "https://mdblist.com/lists/mulanzo1/peter-jackson",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.75976",
+        "type": "movie",
+        "name": "[Director] Francis Ford Coppola",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 23,
+          "author": "vancityguy",
+          "url": "https://mdblist.com/lists/vancityguy/francis-ford-coppola",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.75982",
+        "type": "movie",
+        "name": "[Director] Guillermo del Toro",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 13,
+          "author": "vancityguy",
+          "url": "https://mdblist.com/lists/vancityguy/guillermo-del-toro",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.119708",
+        "type": "movie",
+        "name": "[Director] Wes Anderson",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 18,
+          "author": "bruininia-23dd720e",
+          "url": "https://mdblist.com/lists/bruininia-23dd720e/wes-anderson",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.75977",
+        "type": "movie",
+        "name": "[Director] Paul Thomas Anderson",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 11,
+          "author": "vancityguy",
+          "url": "https://mdblist.com/lists/vancityguy/paul-thomas-anderson",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.91029",
+        "type": "movie",
+        "name": "[Director] David Fincher",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 13,
+          "author": "mawsa",
+          "url": "https://mdblist.com/lists/mawsa/david-fincher",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.106355",
+        "type": "movie",
+        "name": "[Director] Martin Scorsese",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 32,
+          "author": "alan-snackbar",
+          "url": "https://mdblist.com/lists/alan-snackbar/martin-scorsese-e7oh6dfhyk"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.143629",
+        "type": "movie",
+        "name": "[Director] Quentin Tarantino Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 12,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/director-quentin-tarantino-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143630",
+        "type": "movie",
+        "name": "[Director] Ridley Scott Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 29,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/director-ridley-scott-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143631",
+        "type": "movie",
+        "name": "[Director] Steven Spielberg Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 37,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/director-steven-spielberg-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143632",
+        "type": "movie",
+        "name": "[Director] Christopher Nolan Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 12,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/director-christopher-nolan-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143633",
+        "type": "movie",
+        "name": "[Director] James Cameron Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 13,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/director-james-cameron-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143634",
+        "type": "movie",
+        "name": "[Director] John Carpenter Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 20,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/director-john-carpenter-movies",
+          "mediatype": "movie"
+        }
+      },
+      {
+        "id": "mdblist.143635",
+        "type": "movie",
+        "name": "[Director] Denis Villeneuve Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 12,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/director-denis-villeneuve-movies",
+          "mediatype": "movie"
+        }
+      }
+    ],
+    "search": {
+      "enabled": true,
+      "ai_enabled": false,
+      "providers": {
+        "movie": "tmdb.search",
+        "series": "tvdb.search",
+        "anime_movie": "mal.search.movie",
+        "anime_series": "mal.search.series",
+        "people_search_movie": "tmdb.people.search",
+        "people_search_series": "tvdb.people.search"
+      },
+      "engineEnabled": {
+        "tmdb.search": true,
+        "tvdb.search": true,
+        "tvdb.collections.search": false,
+        "tvmaze.search": true,
+        "mal.search.movie": false,
+        "mal.search.series": false,
+        "trakt.people.search": false,
+        "people_search_movie": true,
+        "people_search_series": true
+      },
+      "providerNames": {
+        "tmdb.search": "Movies",
+        "tvdb.search": "Shows"
+      },
+      "searchOrder": [
+        "movie",
+        "series",
+        "gemini.search"
+      ]
+    },
+    "streaming": [
+      "atp",
+      "cru"
+    ],
+    "lastModified": 1770729351186,
+    "configVersion": 1770729351187,
+    "timezone": "Europe/Berlin",
+    "hideUnreleasedDigitalSearch": true,
+    "showDisabledCatalogs": true,
+    "enableRatingPostersForLibrary": false,
+    "exclusionKeywords": "",
+    "mdblistWatchTracking": true
+  },
+  "metadata": {
+    "apiKeysExcluded": true,
+    "totalCatalogs": 252,
+    "enabledCatalogs": 201
+  }
+}
