@@ -255,14 +255,13 @@ To increase it:
 2. Under **EXCLUDED STREAM EXPRESSIONS**, find the global limit rule and change the number (or remove the rule)
 
 Current rule:
-```txt
-/*Global Result Limit: 15*/slice(negate(merge(library(streams), cached(seadex(streams))), streams), 15)
+- /*Global Result Limit: 15*/slice(negate(merge(library(streams), cached(seadex(streams))), streams), 15)
 
 ## Artwork
-**Actors/Directors:** https://postimg.cc/gallery/3kjchpC
-**Genres:** https://postimg.cc/gallery/VsT9R6V
-**Decades:** https://postimg.cc/gallery/v5hCxKd
-**Streaming Services & Trending/Latest:** https://postimg.cc/gallery/gXh7xgR
+- **Actors/Directors:** https://postimg.cc/gallery/3kjchpC
+- **Genres:** https://postimg.cc/gallery/VsT9R6V
+- **Decades:** https://postimg.cc/gallery/v5hCxKd
+- **Streaming Services & Trending/Latest:** https://postimg.cc/gallery/gXh7xgR
 
 ## Credits
 - AIOStreams community templates and formatter/SEL inspiration
