@@ -147,7 +147,7 @@ Download all **four JSON files** from this repo:
 3. Import the regex JSON from one of these links:
 
 **Link**
-- https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/omni-regex_02-06_11-25-28.omni.json
+- [https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/omni-regex_02-06_11-25-28.omni.json](https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/omni-regex-bot-bid-raiser-v1.5-2026-02-11.json)
 
 It is recommended to to this **before** restoring the snapshot, because the snapshot references the regex styling/colors.
 
