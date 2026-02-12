@@ -147,7 +147,7 @@ Download all **four JSON files** from this repo:
 3. Import the regex JSON from one of these links:
 
 **Link**
-- [https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/omni-regex_02-06_11-25-28.omni.json](https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/omni-regex-bot-bid-raiser-v1.5-2026-02-11.json)
+- https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/omni-regex-bot-bid-raiser-v1.5.1-2026-02-12.json
 
 It is recommended to to this **before** restoring the snapshot, because the snapshot references the regex styling/colors.
 
@@ -169,6 +169,33 @@ Copy the Omni snapshot `.json` file to:
 Done — everything should now be set up.
 
 ## Changelog
+
+## Changelog
+
+<details open>
+  <summary><strong>v1.5.1</strong></summary>
+
+### Catalogs / UI
+- Added a new **Bollywood** catalog.
+
+### Regex / Tags (Omni)
+- Updated the **HDR regex logic** to avoid duplicate / lower-tier HDR labels:
+
+**HDR regex rules**
+- **DV + HDR10+** can both be shown if both tags are present in the release name.
+- If **DV** is present, it **suppresses** lower-tier HDR labels (**HDR10** and generic **HDR**) to avoid duplicates.
+- If only **HDR10+** is present, it **suppresses** **HDR10** and generic **HDR** (**HDR10+** is treated as higher tier).
+- If **HDR10** is present, it **suppresses** generic **HDR**.
+
+**Optional fallback for non-DV devices (optional)**
+- If a release name contains **DV + (HDR or HDR10)**, Omni can add an extra label **“HDR10”** as a hint that an **HDR10 fallback is likely**.
+- This fallback **won’t be added when HDR10+ is present**, since the HDR10+ badge already covers it.
+- You can enable this in **Omni → Settings → Regex** if you want.
+
+### Scoring / Sorting
+- Tweaked **SEL scoring for Atmos** and optimized it further for **Apple TV**.
+
+</details>
 
 <details open>
   <summary><strong>v1.5</strong></summary>
