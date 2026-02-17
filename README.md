@@ -171,6 +171,29 @@ Done — everything should now be set up.
 ## Changelog
 
 ## Changelog
+<details open>
+  <summary><strong>v1.6</strong></summary>
+
+### Artwork / UI
+- Reworked the **Decades** posters and improved several **Genre** posters.
+- If you prefer older or alternative versions, you can grab them here:
+  - **Decades:** https://postimg.cc/gallery/v5hCxKd
+  - **Genres:** https://postimg.cc/gallery/VsT9R6V
+
+### Catalogs
+- Added a new **Alien Collection** catalog.
+- Fixed a few **missing catalogs**.
+
+### AIOStreams (SEL / Sorting)
+- Updated AIOStreams to use **Vidhin SEL links**, so scores should update automatically when he changes them.
+- Optimized **sound codec scoring** for **Apple TV**.
+
+### Omni Regex / Tags
+- Updated HDR logic: **HDR10+ is only shown when DV is NOT present** (DV is now ranked higher than HDR10+).
+- If your device/player doesn’t support **DV**, switch in Omni to **HDR patterns for non-DV devices** in **Omni → Settings → Regex** (instead of the standard HDR patterns).
+- Updated 4K detection: the **4K badge will no longer show** when the release name also contains **1080p** (or similar mixed-resolution naming).
+
+</details>
 
 <details open>
   <summary><strong>v1.5.1</strong></summary>
