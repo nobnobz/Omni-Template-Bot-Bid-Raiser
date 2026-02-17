@@ -3,7 +3,7 @@ A curated Omni + AIOStreams + AIOMetadata setup with a minimal formatter and con
 
 ## Screenshots
 <img width="1456" height="827" alt="image" src="https://github.com/user-attachments/assets/3e6e7379-8da0-46cf-9baa-6b2d0a10d045" />
-<img width="1459" height="839" alt="image" src="https://github.com/user-attachments/assets/47aa08a4-866b-42e7-95c7-6145e658169e" />
+<img width="1501" height="827" alt="image" src="https://github.com/user-attachments/assets/3a8bfc89-0637-4ab3-bb41-5cdaaa4fb9bb" />
 <img width="1465" height="825" alt="image" src="https://github.com/user-attachments/assets/9a449ca7-6434-406b-8b2e-50e40b5aed34" />
 <img width="1422" height="602" alt="image" src="https://github.com/user-attachments/assets/a639422c-d31b-450b-a10d-dbe20cd82912" />
 <img width="1503" height="741" alt="image" src="https://github.com/user-attachments/assets/933f83ea-3d33-4b7e-92dc-fad0fd362f49" />
