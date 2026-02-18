@@ -1,6 +1,6 @@
 {
   "version": "1.28.1",
-  "exportedAt": "2026-02-17T12:44:16.235Z",
+  "exportedAt": "2026-02-18T22:04:47.234Z",
   "config": {
     "language": "en-US",
     "includeAdult": false,
@@ -191,6 +191,19 @@
         "displayType": "series"
       },
       {
+        "id": "mdblist.87667",
+        "type": "movie",
+        "name": "[Trending] Trakt's Trending Movies",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "displayType": "movie"
+      },
+      {
         "id": "mdblist.110250",
         "type": "series",
         "name": "[Trending] Trakt's Trending Shows",
@@ -208,19 +221,6 @@
           "url": "https://mdblist.com/lists/snoak/popular-on-imdb-shows"
         },
         "displayType": "series"
-      },
-      {
-        "id": "mdblist.87667",
-        "type": "movie",
-        "name": "[Trending] Trakt's Trending Movies",
-        "enabled": true,
-        "showInHome": true,
-        "source": "mdblist",
-        "sort": "default",
-        "order": "asc",
-        "cacheTTL": 86400,
-        "genreSelection": "standard",
-        "displayType": "movie"
       },
       {
         "id": "mdblist.86752",
@@ -318,6 +318,26 @@
         "displayType": "movie"
       },
       {
+        "id": "mdblist.86625",
+        "type": "series",
+        "name": "[Service] Apple TV Shows",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 49,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/apple-tv-top-10-tv-shows",
+          "mediatype": "show"
+        },
+        "displayType": "series"
+      },
+      {
         "id": "mdblist.86756",
         "type": "series",
         "name": "[Service] Apple TV Shows Alternative",
@@ -334,17 +354,6 @@
           "author": "snoak",
           "url": "https://mdblist.com/lists/snoak/latest-apple-tv-shows"
         },
-        "displayType": "series"
-      },
-      {
-        "id": "streaming.atp",
-        "name": "[Service] Apple TV Shows",
-        "type": "series",
-        "source": "streaming",
-        "enabled": true,
-        "showInHome": true,
-        "sort": "popularity",
-        "sortDirection": "desc",
         "displayType": "series"
       },
       {
@@ -4241,11 +4250,11 @@
       ]
     },
     "streaming": [
-      "atp",
-      "cru"
+      "cru",
+      "nfx"
     ],
-    "lastModified": 1770998878001,
-    "configVersion": 1770998878002,
+    "lastModified": 1771452006031,
+    "configVersion": 1771452006032,
     "timezone": "Europe/Berlin",
     "hideUnreleasedDigitalSearch": true,
     "showDisabledCatalogs": true,
