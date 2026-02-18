@@ -170,7 +170,22 @@ Done — everything should now be set up.
 
 ## Changelog
 
-## Changelog
+<details open>
+  <summary><strong>v1.6.1</strong></summary>
+
+### Anime
+- Just small improvements for anime handling.
+- Cleaned up the formatter so there are **no double badges for anime** anymore.
+
+### Omni Regex / Tags
+- Added **WEB T4** regex pattern + icon.
+- Added **WEB T5** regex pattern + icon.
+- Added a regex pattern + icon for **SeaDex releases**.
+
+### Catalogs
+- Updated the **Apple TV Shows** catalog.
+- Added back the **Top Shows & Movies of the Week** at the top below the continue watching bar.
+</details>
 <details open>
   <summary><strong>v1.6</strong></summary>
 
