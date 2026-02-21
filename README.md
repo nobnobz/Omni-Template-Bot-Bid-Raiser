@@ -171,6 +171,18 @@ Done — everything should now be set up.
 ## Changelog
 
 <details open>
+  <summary><strong>v1.6.2</strong></summary>
+
+### Catalogs
+- Added a new **Timothée Chalamet** catalog.
+
+### AIOStreams (SEL / Sorting)
+- Updated **Tam’s SEL** to the newest version.
+- Updated SELs to use **synced link-based sources** where compatible with this setup, so scoring stays up-to-date automatically.
+
+</details>
+
+<details open>
   <summary><strong>v1.6.1</strong></summary>
 
 ### Anime
