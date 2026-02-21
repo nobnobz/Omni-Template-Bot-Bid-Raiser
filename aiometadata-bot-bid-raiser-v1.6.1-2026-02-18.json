@@ -1,6 +1,6 @@
 {
-  "version": "1.28.1",
-  "exportedAt": "2026-02-18T22:04:47.234Z",
+  "version": "1.31.0",
+  "exportedAt": "2026-02-21T15:44:09.961Z",
   "config": {
     "language": "en-US",
     "includeAdult": false,
@@ -53,7 +53,11 @@
       "fanart": "",
       "rpdb": "",
       "topPoster": "",
-      "mdblist": ""
+      "mdblist": "",
+      "traktTokenId": "",
+      "simklTokenId": "",
+      "anilistTokenId": "",
+      "customDescriptionBlurb": ""
     },
     "ageRating": "None",
     "searchEnabled": true,
@@ -2735,6 +2739,24 @@
         }
       },
       {
+        "id": "mdblist.147855",
+        "type": "all",
+        "name": "[Actor] Timothée Chalamet",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "tmdbpopular",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 19,
+          "author": "nobnobz",
+          "url": "https://mdblist.com/lists/nobnobz/actor-timothée-chalamet"
+        }
+      },
+      {
         "id": "mdblist.143717",
         "type": "series",
         "name": "[Actor] Samuel L. Jackson Shows",
@@ -4265,7 +4287,7 @@
   },
   "metadata": {
     "apiKeysExcluded": true,
-    "totalCatalogs": 254,
-    "enabledCatalogs": 203
+    "totalCatalogs": 255,
+    "enabledCatalogs": 204
   }
 }
