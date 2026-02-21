@@ -200,7 +200,7 @@
     "(?i)\\bRemux\\b.*\\b(3L|BiZKiT|BLURANiUM|CiNEPHiLES|FraMeSToR|PiRAMiDHEAD|PmP|ZQ)\\b|-BMF|-WiLDCAT\/i" : "📀 REMUX 1",
     "(?i)^(?=.*\\bWEB[-_.]?(?:DL|RIP)\\b)(?=.*\\b(?:DEFLATE|INFLATE)\\b).*" : "🎭WEB SCENE",
     "(?i)(?=.*\\bBlu[-_]?Ray\\b)(?!.*\\bRemux\\b)(?!.*\\bWEB[-_.]?(?:DL|Rip)\\b)(?=.*(?:\\b(?:BBQ|c0kE|CRiSC|CtrlHD|Dariush|decibeL|D-Z0N3|EbP|EDPH|LolHD|MainFrame|NCmt|NTb|PTer|TayTO|TDD|TnP|VietHD|ZoroSenpai|W4NK3R|ZQ)\\b|-BMF)).*" : "💿 BLU-RAY 1",
-    "(?i)^(?=.*\\bremux\\b)(?=.*\\b(Blu[-_. ]?Ray|UHD|BD)\\b)(?!.*\\bRemux\\s*T[123]\\b)(?!.*\\bWEB[-_.]?(?:DL|RIP)\\b).*" : "📀 REMUX Unranked",
+    "(?i)^(?=.*\bremux\b)(?!.*\bRemux\s*T[123]\b)(?!.*\bWEB[-_.]?(?:DL|RIP)\b).*" : "📀 REMUX Unranked",
     "(?i)(?=.*\\batmos\\b)(?=.*\\bremux\\b)(?!.*\\b(?:true[ .\\-_]?hd|ddp|dd\\+|e-?ac3|eac3)\\b).*" : "TRUEHD REMUX Fallback",
     "(?i)(?=.*[^0-9]6[ .][0-1]\\b)(?!.*[^0-9][7-8][ .][0-1]\\b)(?!.*[^0-9]5[ .][0-1]\\b)(?!.*(?<!repac)[^0-9][1-4][ .][0-1]\\b|\\\\b(Stereo|Mono)\\\\b)" : "6.1 CH",
     "(?i)\\bRemux\\b.*\\b(ATELiER|Flights|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b" : "📀 REMUX 2",
