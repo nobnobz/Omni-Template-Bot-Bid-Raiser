@@ -64,11 +64,11 @@ The formatter includes **file size** and **bitrate** (when available):
 **2) Addons + score badge**  
 Next to the Addons there’s a compact badge that represents the new regex scoring:
 
-- **♛** = **5★**
+- **♛** = **5★** (higehst scored streams)
 - **⭑** = **4★**
 - **✦** = **3★**
 - **△** = **2★**
-- **⊘** = **1★ or 0★**
+- **⊘** = **1★ or 0★** (lowest scored streams)
 
 **Note:** If you’re using UsenetStreamer, health-checked NZBs show a checkmark (✓) next to the indexer name.
 
