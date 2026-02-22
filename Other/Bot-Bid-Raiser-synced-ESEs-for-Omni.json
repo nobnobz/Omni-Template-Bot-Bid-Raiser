@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "excludedStreamExpressions (Standard)",
-    "author": "Tamtaro",
+    "author": "Bot-Bid-Raiser",
     "description": "You should not need to import this synced url manually. It's included in my SEL Setup templates. Ensure your AIOStreams instance has appropriate permissions in their .env to support my urls. Simply add my all-in-one template url to TEMPLATE_URLS = https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/Tamtaro-All-Templates-for-AIOStreams.json. Alternatively, to only import this json, use this url inside Filter-> Stream Expressions -> Excluded: https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-ESEs-standard.json",
     "version": "1.0.2"
   },
