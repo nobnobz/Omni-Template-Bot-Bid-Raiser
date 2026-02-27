@@ -1,6 +1,6 @@
 {
-  "version": "1.31.0",
-  "exportedAt": "2026-02-21T15:44:09.961Z",
+  "version": "1.32.3",
+  "exportedAt": "2026-02-27T15:59:01.493Z",
   "config": {
     "language": "en-US",
     "includeAdult": false,
@@ -19,21 +19,21 @@
     },
     "artProviders": {
       "movie": {
-        "poster": "meta",
-        "background": "meta",
-        "logo": "meta"
+        "poster": "imdb",
+        "background": "imdb",
+        "logo": "imdb"
       },
       "series": {
-        "poster": "meta",
-        "background": "meta",
-        "logo": "meta"
+        "poster": "imdb",
+        "background": "imdb",
+        "logo": "imdb"
       },
       "anime": {
-        "poster": "mal",
+        "poster": "kitsu",
         "background": "mal",
-        "logo": "meta"
+        "logo": "fanart"
       },
-      "englishArtOnly": true
+      "englishArtOnly": false
     },
     "tvdbSeasonType": "default",
     "mal": {
@@ -4237,6 +4237,15 @@
           "url": "https://mdblist.com/lists/nobnobz/director-denis-villeneuve-movies",
           "mediatype": "movie"
         }
+      },
+      {
+        "id": "trakt.unwatched",
+        "type": "series",
+        "name": "My Recently Aired",
+        "enabled": true,
+        "showInHome": true,
+        "source": "trakt",
+        "cacheTTL": 300
       }
     ],
     "search": {
@@ -4258,8 +4267,8 @@
         "mal.search.movie": false,
         "mal.search.series": false,
         "trakt.people.search": false,
-        "people_search_movie": true,
-        "people_search_series": true
+        "people_search_movie": false,
+        "people_search_series": false
       },
       "providerNames": {
         "tmdb.search": "Movies",
@@ -4269,25 +4278,35 @@
         "movie",
         "series",
         "gemini.search"
-      ]
+      ],
+      "searchNames": {
+        "series": "Shows",
+        "movie": "Movies"
+      },
+      "searchDisplayTypes": {
+        "series": "series",
+        "movie": "movie"
+      }
     },
     "streaming": [
       "cru",
       "nfx"
     ],
-    "lastModified": 1771452006031,
-    "configVersion": 1771452006032,
+    "lastModified": 1772128027470,
+    "configVersion": 1772128027471,
     "timezone": "Europe/Berlin",
     "hideUnreleasedDigitalSearch": true,
     "showDisabledCatalogs": true,
     "enableRatingPostersForLibrary": false,
     "exclusionKeywords": "",
     "mdblistWatchTracking": true,
-    "catalogSetupComplete": true
+    "catalogSetupComplete": true,
+    "configHash": "1193d0854982c624",
+    "catalogModeOnly": false
   },
   "metadata": {
     "apiKeysExcluded": true,
-    "totalCatalogs": 255,
-    "enabledCatalogs": 204
+    "totalCatalogs": 256,
+    "enabledCatalogs": 205
   }
 }
