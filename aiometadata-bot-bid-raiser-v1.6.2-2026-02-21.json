@@ -1,6 +1,6 @@
 {
   "version": "1.32.3",
-  "exportedAt": "2026-02-27T15:59:01.493Z",
+  "exportedAt": "2026-02-28T21:37:02.672Z",
   "config": {
     "language": "en-US",
     "includeAdult": false,
@@ -11,7 +11,7 @@
     "sfw": true,
     "hideUnreleasedDigital": true,
     "providers": {
-      "movie": "tmdb",
+      "movie": "tvdb",
       "series": "tvdb",
       "anime": "kitsu",
       "anime_id_provider": "imdb",
@@ -19,19 +19,19 @@
     },
     "artProviders": {
       "movie": {
-        "poster": "imdb",
-        "background": "imdb",
+        "poster": "tmdb",
+        "background": "tmdb",
         "logo": "imdb"
       },
       "series": {
-        "poster": "imdb",
-        "background": "imdb",
+        "poster": "tmdb",
+        "background": "tmdb",
         "logo": "imdb"
       },
       "anime": {
         "poster": "kitsu",
-        "background": "mal",
-        "logo": "fanart"
+        "background": "imdb",
+        "logo": "imdb"
       },
       "englishArtOnly": false
     },
@@ -1887,6 +1887,81 @@
         "displayType": "all"
       },
       {
+        "id": "mdblist.100467",
+        "type": "movie",
+        "name": "[Collection] Oscar Winners",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 97,
+          "author": "bermontoto",
+          "url": "https://mdblist.com/lists/bermontoto/oscar-winners-all"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.149615",
+        "type": "movie",
+        "name": "[Collection] Golden Globes Winners",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 156,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/collection-golden-globes-winners"
+        }
+      },
+      {
+        "id": "mdblist.149616",
+        "type": "movie",
+        "name": "[Collection] Cannes Palme d'Or",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 71,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/collection-cannes-palme-dor-grand-prix"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.140566",
+        "type": "movie",
+        "name": "[Collection] Oscars 2026 Nominations | The 98th Academy Awards",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "score",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 50,
+          "author": "jordipc",
+          "url": "https://mdblist.com/lists/jordipc/oscars-2026-the-98th-academy-awards"
+        },
+        "displayType": "movie"
+      },
+      {
         "id": "mdblist.128063",
         "type": "series",
         "name": "[Collection] Marvel Shows",
@@ -1974,6 +2049,24 @@
         "genreSelection": "standard",
         "displayType": "movie",
         "enableRatingPosters": true
+      },
+      {
+        "id": "mdblist.149620",
+        "type": "series",
+        "name": "[Collection] Emmy Awards 2000-2025",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "released",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 72,
+          "author": "nobnob",
+          "url": "https://mdblist.com/lists/nobnob/collection-emmy-awards-2000-2025"
+        }
       },
       {
         "id": "mdblist.146022",
@@ -4292,21 +4385,21 @@
       "cru",
       "nfx"
     ],
-    "lastModified": 1772128027470,
-    "configVersion": 1772128027471,
+    "lastModified": 1772312152117,
+    "configVersion": 1772312152118,
     "timezone": "Europe/Berlin",
-    "hideUnreleasedDigitalSearch": true,
+    "hideUnreleasedDigitalSearch": false,
     "showDisabledCatalogs": true,
     "enableRatingPostersForLibrary": false,
     "exclusionKeywords": "",
     "mdblistWatchTracking": true,
     "catalogSetupComplete": true,
-    "configHash": "1193d0854982c624",
+    "configHash": "4968c9842f0bbf44",
     "catalogModeOnly": false
   },
   "metadata": {
     "apiKeysExcluded": true,
-    "totalCatalogs": 256,
-    "enabledCatalogs": 205
+    "totalCatalogs": 261,
+    "enabledCatalogs": 210
   }
 }
