@@ -1,6 +1,6 @@
 {
   "version": "1.32.3",
-  "exportedAt": "2026-02-28T21:37:02.672Z",
+  "exportedAt": "2026-03-01T14:00:08.021Z",
   "config": {
     "language": "en-US",
     "includeAdult": false,
@@ -208,7 +208,7 @@
         "displayType": "movie"
       },
       {
-        "id": "mdblist.110250",
+        "id": "mdblist.88434",
         "type": "series",
         "name": "[Trending] Trakt's Trending Shows",
         "enabled": true,
@@ -220,9 +220,10 @@
         "genreSelection": "standard",
         "enableRatingPosters": true,
         "metadata": {
-          "itemCount": 98,
+          "itemCount": 250,
           "author": "snoak",
-          "url": "https://mdblist.com/lists/snoak/popular-on-imdb-shows"
+          "url": "https://mdblist.com/lists/snoak/trakt-s-trending-shows",
+          "mediatype": "show"
         },
         "displayType": "series"
       },
@@ -752,21 +753,22 @@
         "displayType": "series"
       },
       {
-        "id": "mdblist.88330",
+        "id": "mdblist.89366",
         "type": "movie",
         "name": "[Top] Paramount+ Movies",
         "enabled": true,
         "showInHome": true,
         "source": "mdblist",
-        "sort": "default",
+        "sort": "imdbpopular",
         "order": "asc",
         "cacheTTL": 86400,
         "genreSelection": "standard",
         "enableRatingPosters": true,
         "metadata": {
-          "itemCount": 200,
-          "author": "tvgeniekodi",
-          "url": "https://mdblist.com/lists/tvgeniekodi/paramount-movies"
+          "itemCount": 53,
+          "author": "snoak",
+          "url": "https://mdblist.com/lists/snoak/paramount-plus-top-10-movies",
+          "mediatype": "movie"
         },
         "displayType": "movie"
       },
@@ -4360,8 +4362,8 @@
         "mal.search.movie": false,
         "mal.search.series": false,
         "trakt.people.search": false,
-        "people_search_movie": false,
-        "people_search_series": false
+        "people_search_movie": true,
+        "people_search_series": true
       },
       "providerNames": {
         "tmdb.search": "Movies",
@@ -4385,8 +4387,8 @@
       "cru",
       "nfx"
     ],
-    "lastModified": 1772312152117,
-    "configVersion": 1772312152118,
+    "lastModified": 1772366951738,
+    "configVersion": 1772366951739,
     "timezone": "Europe/Berlin",
     "hideUnreleasedDigitalSearch": false,
     "showDisabledCatalogs": true,
@@ -4394,7 +4396,7 @@
     "exclusionKeywords": "",
     "mdblistWatchTracking": true,
     "catalogSetupComplete": true,
-    "configHash": "4968c9842f0bbf44",
+    "configHash": "5d7c389b5fcd69bf",
     "catalogModeOnly": false
   },
   "metadata": {
