@@ -171,6 +171,32 @@ Done — everything should now be set up.
 ## Changelog
 
 <details open>
+  <summary><strong>v1.7</strong></summary>
+
+### Catalogs
+- Added new award/festival catalogs:
+  - **Academy Awards**
+  - **Oscars 2026 nominees**
+  - **Golden Globes**
+  - **Emmys**
+  - **Cannes Film Festival**
+- Minor updates to some existing catalogs.
+
+### Addons
+- Added **Meteor** addon.
+
+### Search / UX
+- Fixed an issue where **People search** didn’t work.
+
+### AIOStreams (SEL / Sorting)
+- Updated **excluded ESE**.
+
+### AIOMetadata (Metadata / Artwork)
+- Optimized **metadata** and **artwork providers** for improved reliability and results.
+
+</details>
+
+<details open>
   <summary><strong>v1.6.2</strong></summary>
 
 ### Catalogs
