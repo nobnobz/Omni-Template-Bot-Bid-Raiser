@@ -79,7 +79,7 @@
         }
       },
       "id" : "collection.6DE902D0-26B7-4D70-9B63-C4544D8258F9",
-      "title" : "Latest Releases",
+      "title" : "Discover",
       "type" : "collection.row"
     },
     {
@@ -218,7 +218,7 @@
                   "kind" : "addonCatalog",
                   "payload" : {
                     "addonId" : "YOUR_AIOMETADATA_MANIFEST.JSON",
-                    "catalogId" : "movie::mdblist.86762",
+                    "catalogId" : "movie::mdblist.88330",
                     "type" : "movie"
                   }
                 },
@@ -264,7 +264,22 @@
             },
             {
               "dataSources" : [
-
+                {
+                  "kind" : "addonCatalog",
+                  "payload" : {
+                    "addonId" : "YOUR_AIOMETADATA_MANIFEST.JSON",
+                    "catalogId" : "movie::mdblist.83487",
+                    "type" : "movie"
+                  }
+                },
+                {
+                  "kind" : "addonCatalog",
+                  "payload" : {
+                    "addonId" : "YOUR_AIOMETADATA_MANIFEST.JSON",
+                    "catalogId" : "series::mdblist.83484",
+                    "type" : "series"
+                  }
+                }
               ],
               "hideTitle" : false,
               "id" : "54052DD7-E1DD-48F7-BC3E-7B4ABFDE4E7B",
@@ -356,7 +371,7 @@
               "hideTitle" : false,
               "id" : "99022B2A-39E3-4DBA-AA2A-F43FFD663BFF",
               "imageAspect" : "poster",
-              "imageURL" : "https:\/\/i.postimg.cc\/mkx8n1c2\/IMG-0812.jpg",
+              "imageURL" : "https:\/\/i.postimg.cc\/t4xcnHf8\/Comedy.jpg",
               "title" : "Comedy "
             },
             {
@@ -381,7 +396,7 @@
               "hideTitle" : false,
               "id" : "EE8C8CE4-950F-4EBE-96AF-F13C1C8B2131",
               "imageAspect" : "poster",
-              "imageURL" : "https:\/\/i.postimg.cc\/C1ncJsKf\/IMG-0813.jpg",
+              "imageURL" : "https:\/\/i.postimg.cc\/xT77ddx0\/Mystery.jpg",
               "title" : "Mystery"
             },
             {
@@ -406,7 +421,7 @@
               "hideTitle" : false,
               "id" : "FFF9449D-623F-4F37-A7FA-E042D5CF22C6",
               "imageAspect" : "poster",
-              "imageURL" : "https:\/\/i.postimg.cc\/fy4BPS3t\/IMG-0799.jpg",
+              "imageURL" : "https:\/\/i.postimg.cc\/zGgQH161\/Fantasy.jpg",
               "title" : "Fantasy \/ Sci-Fi"
             },
             {
@@ -1106,6 +1121,23 @@
               "imageAspect" : "poster",
               "imageURL" : "https:\/\/i.postimg.cc\/nrJ2T9YL\/Peter_Jackson.jpg",
               "title" : "Peter Jackson"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "addonCatalog",
+                  "payload" : {
+                    "addonId" : "YOUR_AIOMETADATA_MANIFEST.JSON",
+                    "catalogId" : "all::mdblist.149984",
+                    "type" : "series"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "CB6623AB-2D75-4F42-8155-0DB9FCCE0CEC",
+              "imageAspect" : "poster",
+              "imageURL" : "https:\/\/i.postimg.cc\/sXmGv7Pr\/9F0BF3A6-C828-400F-A6F4-E86D2E0C376A.jpg",
+              "title" : "Spike Lee"
             },
             {
               "dataSources" : [
@@ -2338,6 +2370,91 @@
                   "kind" : "addonCatalog",
                   "payload" : {
                     "addonId" : "YOUR_AIOMETADATA_MANIFEST.JSON",
+                    "catalogId" : "movie::mdblist.100467",
+                    "type" : "movie"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "E0D4CEA9-BBE9-4057-B10E-AACB73D610D9",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/Zqr4X59D\/oscars_4.jpg",
+              "title" : "Academy Awards"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "addonCatalog",
+                  "payload" : {
+                    "addonId" : "YOUR_AIOMETADATA_MANIFEST.JSON",
+                    "catalogId" : "movie::mdblist.140566",
+                    "type" : "movie"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "422352AB-A779-4EDE-81B0-0F7BAA1AB2DD",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/8C2s6z9c\/oscars_2026_nominees.jpg",
+              "title" : "2026 Nominees"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "addonCatalog",
+                  "payload" : {
+                    "addonId" : "YOUR_AIOMETADATA_MANIFEST.JSON",
+                    "catalogId" : "movie::mdblist.149616",
+                    "type" : "movie"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "379AE0FE-C5FB-4994-9260-7B98EDA80CDC",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/wBxJWpJf\/4CC6C2CE-AD6E-4851-A764-F4FE4D801F3F.png",
+              "title" : "Cannes Film Festival"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "addonCatalog",
+                  "payload" : {
+                    "addonId" : "YOUR_AIOMETADATA_MANIFEST.JSON",
+                    "catalogId" : "series::mdblist.149620",
+                    "type" : "series"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "291902FA-E0E9-479B-84DC-A542E3EC7D7A",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/9fhX17xS\/emmys_2.jpg",
+              "title" : "Emmy Awards"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "addonCatalog",
+                  "payload" : {
+                    "addonId" : "YOUR_AIOMETADATA_MANIFEST.JSON",
+                    "catalogId" : "movie::mdblist.149615",
+                    "type" : "movie"
+                  }
+                }
+              ],
+              "hideTitle" : false,
+              "id" : "32B63285-2737-4820-9AB5-65EEA62A25CF",
+              "imageAspect" : "wide",
+              "imageURL" : "https:\/\/i.postimg.cc\/kGVT2Bdr\/golden_globes_2.jpg",
+              "title" : "Golden Globe Awards"
+            },
+            {
+              "dataSources" : [
+                {
+                  "kind" : "addonCatalog",
+                  "payload" : {
+                    "addonId" : "YOUR_AIOMETADATA_MANIFEST.JSON",
                     "catalogId" : "series::mdblist.128063",
                     "type" : "series"
                   }
@@ -2775,11 +2892,11 @@
         "kind" : "addonCatalog",
         "payload" : {
           "addonId" : "YOUR_AIOMETADATA_MANIFEST.JSON",
-          "catalogId" : "series::mdblist.110250",
+          "catalogId" : "series::mdblist.88303",
           "type" : "series"
         }
       },
-      "id" : "catalog.BD15CB44-DDD4-4C2C-94F1-84F963FE18E8",
+      "id" : "catalog.C1FDB3D0-08F2-42E2-959C-9196B4465652",
       "limit" : 20,
       "presentation" : {
         "aspectRatio" : "poster",
@@ -2950,7 +3067,7 @@
         },
         "cardStyle" : "medium"
       },
-      "title" : "Prime Movies",
+      "title" : "Amazon Prime Movies",
       "type" : "row.classic"
     },
     {
@@ -2973,7 +3090,7 @@
         },
         "cardStyle" : "medium"
       },
-      "title" : "Prime Shows",
+      "title" : "Amazon Prime Shows",
       "type" : "row.classic"
     },
     {
@@ -3028,11 +3145,11 @@
         "kind" : "addonCatalog",
         "payload" : {
           "addonId" : "YOUR_AIOMETADATA_MANIFEST.JSON",
-          "catalogId" : "movie::mdblist.88330",
+          "catalogId" : "movie::mdblist.89366",
           "type" : "movie"
         }
       },
-      "id" : "catalog.A3D96E47-6BC1-49D8-B28B-679DBA00A693",
+      "id" : "catalog.3C8EB112-270A-4E14-9F79-3C3BFDAD4B2B",
       "limit" : 20,
       "presentation" : {
         "aspectRatio" : "poster",
