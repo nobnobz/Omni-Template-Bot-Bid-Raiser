@@ -375,6 +375,30 @@ That’s where you manage **collections, actors, directors, genres**, etc.
 
 ---
 
+### My catalogs are empty
+Make sure you have added your MDBList API key in AIOMetadata. Sometimes the catalogs need a few hours to fully load.
+
+---
+
+### Watchlist (Trakt Integration)
+The Watchlist poster and group are **disabled by default**, because they require your personal Trakt watchlist.
+
+To enable:
+
+1. In **Omni → Settings → Trakt → My Lists**  
+   - Connect your Trakt account.  
+   - Add your **Watchlist** as a catalog.
+
+2. Go to **Settings → Groups → Watchlist**  
+   - Add your newly created Trakt Watchlist catalog to the group.
+
+3. Go to **Discover**  
+   - Activate the **Watchlist** group.
+
+Once configured, the Watchlist poster and catalog will work as intended.
+
+---
+
 ### Customize (or disable) regex tag colors
 You can change tag styling (including **colors**) or disable specific tags here:
 
