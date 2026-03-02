@@ -133,7 +133,7 @@ Download all **four JSON files** from this repo:
 ### 5) Set up AIOMetadata
 1. Open **AIOMetadata**
 2. Import my config
-3. Add your API keys
+3. Add your API keys (don't forget to add your MDBList API key)
 4. Set a password
 5. Save your **UUID**
 6. Click **Save**
@@ -169,6 +169,38 @@ Copy the Omni snapshot `.json` file to:
 Done — everything should now be set up.
 
 ## Changelog
+
+## Changelog
+
+<details open>
+  <summary><strong>v1.7.1</strong></summary>
+
+### UI / Posters
+- Refined the **Awards posters** to better match the overall design language and improve visual consistency.
+- Added a dedicated **Watchlist poster** (disabled by default).
+
+### Catalogs
+- Added a new **Spike Lee** catalog.
+- Fixed and cleaned up several existing catalogs (minor structure and consistency adjustments).
+
+### Watchlist (Trakt Integration)
+The Watchlist poster and group are **disabled by default**, because they require your personal Trakt watchlist.
+
+To enable:
+
+1. In **Omni → Settings → Trakt → My Lists**  
+   - Connect your Trakt account.  
+   - Add your **Watchlist** as a catalog.
+
+2. Go to **Settings → Groups → Watchlist**  
+   - Add your newly created Trakt Watchlist catalog to the group.
+
+3. Go to **Discover**  
+   - Activate the **Watchlist** group.
+
+Once configured, the Watchlist poster and catalog will work as intended.
+
+</details>
 
 <details open>
   <summary><strong>v1.7</strong></summary>
