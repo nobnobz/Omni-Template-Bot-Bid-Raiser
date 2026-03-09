@@ -4,16 +4,10 @@
   "templates": [
     {
       "id": "ume-main",
-      "name": "UME Template",
-      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/fusion-template-bot-bid-raiser-v1.6.2.json",
+      "name": "UME Template v1.7.1",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/aiometadata-bot-bid-raiser-v1.7.1-2026-03-02.json",
       "description": "Unified Media Experience - Main Template",
       "isDefault": true
-    },
-    {
-      "id": "ume-catalogs",
-      "name": "UME Catalogs Only",
-      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/catalogs-only-template.json",
-      "description": "Catalogs Only (Lightweight version)"
     }
   ]
 }
