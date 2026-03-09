@@ -7,13 +7,13 @@
       "name": "UME Omni Template v2.0",
       "url": "", 
       "description": "Zukünftige Version",
-      "isDefault": true
     },
     {
       "id": "ume-main",
       "name": "UME Omni Template v1.7.1",
       "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/Older%20Versions/v1.7.1/omni-snapshot-unified-media-experience-v1.7.1-2026-03-02.json",
       "description": "Aktuelle stabile Version"
+      "isDefault": true
     },
     {
       "id": "aiometadata",
