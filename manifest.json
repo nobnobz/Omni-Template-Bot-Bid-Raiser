@@ -1,13 +1,34 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "lastUpdated": "2024-03-09",
   "templates": [
     {
-      "id": "ume-main",
-      "name": "UME Template v1.7.1",
-      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/aiometadata-bot-bid-raiser-v1.7.1-2026-03-02.json",
-      "description": "Unified Media Experience - Main Template",
+      "id": "ume-v2.0",
+      "name": "UME Omni Template v2.0",
+      "url": "", 
+      "description": "Zukünftige Version",
       "isDefault": true
+    },
+    {
+      "id": "ume-main",
+      "name": "UME Omni Template v1.7.1",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/Older%20Versions/v1.7.1/omni-snapshot-unified-media-experience-v1.7.1-2026-03-02.json",
+      "description": "Aktuelle stabile Version"
+    },
+    {
+      "id": "aiometadata",
+      "name": "AIOMetadata Template v1.0.0",
+      "url": ""
+    },
+    {
+      "id": "ume-catalogs",
+      "name": "AIOMetadata (Catalogs Only) v1.0.0",
+      "url": ""
+    },
+    {
+      "id": "aiostreams",
+      "name": "AIOStreams Template v1.7",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/aiostreams-template-bot-bid-raiser-v1.7-2026-03-01.json"
     }
   ]
 }
