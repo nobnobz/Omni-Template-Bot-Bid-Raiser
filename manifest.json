@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-03-09",
+  "templates": [
+    {
+      "id": "ume-main",
+      "name": "UME Template",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/fusion-template-bot-bid-raiser-v1.6.2.json",
+      "description": "Unified Media Experience - Main Template",
+      "isDefault": true
+    },
+    {
+      "id": "ume-catalogs",
+      "name": "UME Catalogs Only",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/catalogs-only-template.json",
+      "description": "Catalogs Only (Lightweight version)"
+    }
+  ]
+}
