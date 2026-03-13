@@ -3,14 +3,14 @@
   "lastUpdated": "2026-03-13",
   "templates": [
     {
-      "id": "ume-v2.0",
+      "id": "ume-main",
       "name": "UME Omni Template v2.0",
       "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/ume-omni-templatev2.0.json", 
       "description": "Aktuelle stabile Version",
       "isDefault": true
     },
     {
-      "id": "ume-main",
+      "id": "ume v1.7.1",
       "name": "UME Omni Template v1.7.1",
       "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/Older%20Versions/v1.7.1/omni-snapshot-unified-media-experience-v1.7.1-2026-03-02.json",
     },
@@ -21,8 +21,8 @@
     },
     {
       "id": "ume-catalogs",
-      "name": "AIOMetadata (Catalogs Only) v1.0.0",
-      "url": ""
+      "name": "AIOMetadata (Catalogs Only) v2.0",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/ume-aiometadata-catalogs-only-v2.0.json"
     },
     {
       "id": "aiostreams",
