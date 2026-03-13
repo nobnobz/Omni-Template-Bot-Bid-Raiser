@@ -1,4 +1,4 @@
-# Omni Template Bot-Bid-Raiser
+# Unified Media Experience (UME)
 
 A curated **Omni + AIOStreams + AIOMetadata** setup with a minimal formatter, consistent regex icon tags, and a browser-based management tool.
 
