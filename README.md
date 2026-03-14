@@ -27,6 +27,13 @@ It can also be added to your home screen as a **web app / PWA** for quicker acce
 
 ---
 
+## 💖 Support the Project
+If this tool makes your Omni management easier, please consider supporting the continued development.
+
+[<img src="https://cdn.prod.website-files.com/5c14e387dab576fe667689cf/670f5a02fcf48af59c591185_support_me_on_kofi_dark.png" width="230" alt="Support my work at Ko-fi">](https://ko-fi.com/botbidraiser)
+
+---
+
 ## Screenshots
 
 <img width="1456" height="827" alt="image" src="https://github.com/user-attachments/assets/3e6e7379-8da0-46cf-9baa-6b2d0a10d045" />
