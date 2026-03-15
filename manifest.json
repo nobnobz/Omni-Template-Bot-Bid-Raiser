@@ -4,8 +4,8 @@
   "templates": [
     {
       "id": "ume-main",
-      "name": "UME Omni Template v2.0",
-      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/ume-omni-template-v2.0.json",
+      "name": "UME Omni Template v2.0.1",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/ume-omni-template-v2.0.1.json",
       "description": "Aktuelle stabile Version",
       "isDefault": true
     },
