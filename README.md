@@ -274,6 +274,50 @@ This makes it much easier to keep your setup current while preserving your own s
 ## Changelog
 
 <details open>
+  <summary><strong>v2.1</strong></summary>
+
+### Collections
+- Added **A Nightmare On Elm Street**
+- Added **A Quiet Place**
+- Added **The Exorcist**
+- Added **Blair Witch**
+- Added **Chucky**
+- Added **Dexter**
+- Added **Final Destination**
+- Added **Friday the 13th**
+- Added **Ghostbusters**
+- Added **Halloween**
+- Added **Gremlins**
+- Added **The Shining**
+- Added **The Purge**
+- Added **The Conjuring Universe**
+- Added **Terrifier**
+- Added **Saw**
+- Added **Psycho**
+- Added **It**
+- Added **Happy Death Day**
+- Added **Paranormal Activity**
+- Added **Quarantine**
+- Added **Hannibal Lecter**
+- Added **xXx**
+
+### Actors
+- Added **Chuck Norris**
+
+### Streaming Services
+- Added **AMC+**
+- Added **BritBox**
+- Added **MagellanTV**
+- Added **STARZ**
+- Added **Curiosity Stream**
+- Added **discovery+**
+- Added **MUBI**
+- Added **Netflix Kids**
+- Added **The Criterion Channel**
+
+</details>
+
+<details open>
   <summary><strong>v2.0</strong></summary>
 
 ### Snapshot Manager / Compatibility
