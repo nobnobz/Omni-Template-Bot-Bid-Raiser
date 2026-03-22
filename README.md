@@ -233,7 +233,11 @@ Copy the Omni snapshot `.json` file to:
 
 `My Phone → Omni → Backups`
 
-On macOS open the Finder Press Shift+Command+G and enter `~/Library/Containers/Omni/Data/Documents/Backups`. If this does not try to go to /Users/USERNAME/Library/Containers/win.stkc.omni/Data/Documents/Backups/
+On macOS open the Finder, press Shift+Command+G and enter 
+
+`~/Library/Containers/Omni/Data/Documents/Backups`
+
+If this does not try to go to `/Users/YOUR_USERNAME/Library/Containers/win.stkc.omni/Data/Documents/Backups/`
 
 ---
 
