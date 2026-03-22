@@ -192,10 +192,7 @@ Main files:
 
 1. Open **AIOStreams**
 2. Go to **Save & Install → Import → Import Template**
-3. Import the AIOStreams template
-4. Add your Debrid provider + TMDB + TVDB API keys under **Services** (if not already done during import)
-5. Optional: set your preferred language in **Filters**
-6. Optional (for TorBox users): enable the **TorBox addon**
+3. Import the AIOStreams template and follow the steps.
 
 ---
 
@@ -235,6 +232,8 @@ Main files:
 Copy the Omni snapshot `.json` file to:
 
 `My Phone → Omni → Backups`
+
+On macOS open the Finder Press Shift+Command+G and enter `~/Library/Containers/Omni/Data/Documents/Backups`. If this does not try to go to /Users/USERNAME/Library/Containers/win.stkc.omni/Data/Documents/Backups/
 
 ---
 
