@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-03-24T18:14:54.500Z",
+  "templates": [
+    {
+      "id": "ume-omni-template-v2.1.1.json",
+      "name": "UME Omni Template v2.1.1",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-omni-template-v2.1.1.json",
+      "version": "v2.1.1",
+      "isDefault": true
+    },
+    {
+      "id": "ume-aiometadata-config-v2.1.1.json",
+      "name": "UME AIOMetadata Template v2.1.1",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-aiometadata-config-v2.1.1.json",
+      "version": "v2.1.1"
+    },
+    {
+      "id": "ume-aiometadata-catalogs-only-v2.1.1.json",
+      "name": "UME AIOMetadata (Catalogs Only) v2.1.1",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-aiometadata-catalogs-only-v2.1.1.json",
+      "version": "v2.1.1"
+    },
+    {
+      "id": "ume-aiostreams-template.json",
+      "name": "UME AIOStreams Template v2.1.1",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-aiostreams-template.json",
+      "version": "v2.1.1"
+    },
+    {
+      "id": "ume-omni-template-v2.1.json",
+      "name": "UME Omni Template v2.1",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-omni-template-v2.1.json",
+      "version": "v2.1"
+    },
+    {
+      "id": "Older Versions/v2.0/ume-omni-template-v2.0.3.json",
+      "name": "UME Omni Template v2.0.3",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Older%20Versions/v2.0/ume-omni-template-v2.0.3.json",
+      "version": "v2.0.3"
+    },
+    {
+      "id": "Older Versions/v2.0/ume-aiometadata-config-v2.0.json",
+      "name": "UME AIOMetadata Template v2.0",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Older%20Versions/v2.0/ume-aiometadata-config-v2.0.json",
+      "version": "v2.0"
+    },
+    {
+      "id": "Older Versions/v2.0/ume-aiometadata-catalogs-only-v2.0.json",
+      "name": "UME AIOMetadata (Catalogs Only) v2.0",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Older%20Versions/v2.0/ume-aiometadata-catalogs-only-v2.0.json",
+      "version": "v2.0"
+    },
+    {
+      "id": "Older Versions/v1.7.1/ume-aiostreams-template-v1.7.json",
+      "name": "UME AIOStreams Template v1.7.0",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Older%20Versions/v1.7.1/ume-aiostreams-template-v1.7.json",
+      "version": "v1.7.0"
+    }
+  ]
+}

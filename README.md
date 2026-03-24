@@ -48,6 +48,8 @@ If this tool makes your Omni management easier, please consider supporting the c
 
 You can find the following files in this repo and in the **Snapshot Manager** downloads section:
 
+The repo also publishes an automatically generated `template-manifest.json` in the root. It is built from the existing template files, so adding a new matching template file updates the manifest without maintaining a separate URL mapping file.
+
 - **Omni snapshot**  
   Restores my Omni setup including addons, catalog layout, groups, visuals, and structure.
 
