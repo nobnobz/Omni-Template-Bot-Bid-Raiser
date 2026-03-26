@@ -279,6 +279,31 @@ This makes it much easier to keep your setup current while preserving your own s
 ## Changelog
 
 <details open>
+  <summary><strong>v2.2</strong></summary>
+
+### Added Collections
+- Are You Afraid of the Dark?
+- American Pie
+- Bad Boys
+- Bourne Collection
+- Candyman
+- Expendables
+- Die Hard
+- Now You See Me
+- Karate Kid
+- Police Academy
+- Resident Evil
+
+### Added Genre
+- Adventure
+
+### Fixed
+- Fixed broken catalogs
+- General bug fixes and improvements
+
+</details>
+
+<details open>
   <summary><strong>v2.1</strong></summary>
 
 ### Collections
