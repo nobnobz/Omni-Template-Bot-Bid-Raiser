@@ -36,10 +36,9 @@ If this tool makes your Omni management easier, please consider supporting the c
 
 ## Screenshots
 
-<img width="1456" height="827" alt="image" src="https://github.com/user-attachments/assets/3e6e7379-8da0-46cf-9baa-6b2d0a10d045" />
-<img width="1501" height="827" alt="image" src="https://github.com/user-attachments/assets/3a8bfc89-0637-4ab3-bb41-5cdaaa4fb9bb" />
-<img width="1465" height="825" alt="image" src="https://github.com/user-attachments/assets/9a449ca7-6434-406b-8b2e-50e40b5aed34" />
-<img width="1422" height="602" alt="image" src="https://github.com/user-attachments/assets/a639422c-d31b-450b-a10d-dbe20cd82912" />
+![screenshot-studio-1774735254212 2](https://github.com/user-attachments/assets/e5ac8528-ffa4-42c5-abb1-8dbc695a5c6f)
+![screenshot-studio-1774735232835 2](https://github.com/user-attachments/assets/ceaae051-63c9-44d0-a0cd-055c5d04dc67)
+![screenshot-studio-1774735201773 2](https://github.com/user-attachments/assets/73322fb9-d3fd-4652-861e-a2b1e368529f)
 <img width="1503" height="741" alt="image" src="https://github.com/user-attachments/assets/933f83ea-3d33-4b7e-92dc-fad0fd362f49" />
 
 ---
