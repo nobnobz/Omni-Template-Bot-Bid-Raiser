@@ -39,6 +39,8 @@ If this tool makes your Omni management easier, please consider supporting the c
 ![screenshot-studio-1774735254212 2](https://github.com/user-attachments/assets/e5ac8528-ffa4-42c5-abb1-8dbc695a5c6f)
 ![screenshot-studio-1774735232835 2](https://github.com/user-attachments/assets/ceaae051-63c9-44d0-a0cd-055c5d04dc67)
 ![screenshot-studio-1774735201773 2](https://github.com/user-attachments/assets/73322fb9-d3fd-4652-861e-a2b1e368529f)
+![screenshot-studio-1774737638023 2](https://github.com/user-attachments/assets/aaceed34-8a32-4a32-9241-0b2a87598dc6)
+
 
 ---
 
