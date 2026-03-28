@@ -1,12 +1,30 @@
 {
-  "generatedAt": "2026-03-26T12:08:53.018Z",
+  "generatedAt": "2026-03-28T22:16:16.752Z",
   "templates": [
+    {
+      "id": "ume-omni-template-v2.2.1.json",
+      "name": "UME Omni Template v2.2.1",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-omni-template-v2.2.1.json",
+      "version": "v2.2.1",
+      "isDefault": true
+    },
+    {
+      "id": "ume-aiometadata-config-v2.2.1.json",
+      "name": "UME AIOMetadata Template v2.2.1",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-aiometadata-config-v2.2.1.json",
+      "version": "v2.2.1"
+    },
+    {
+      "id": "ume-aiometadata-catalogs-only-v2.2.1.json",
+      "name": "UME AIOMetadata (Catalogs Only) v2.2.1",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-aiometadata-catalogs-only-v2.2.1.json",
+      "version": "v2.2.1"
+    },
     {
       "id": "ume-omni-template-v2.2.json",
       "name": "UME Omni Template v2.2",
       "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-omni-template-v2.2.json",
-      "version": "v2.2",
-      "isDefault": true
+      "version": "v2.2"
     },
     {
       "id": "ume-aiometadata-config-v2.2.json",
