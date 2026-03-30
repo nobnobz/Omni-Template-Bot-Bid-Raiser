@@ -2306,7 +2306,7 @@
                   "url": "https://sooti.info"
                 }
               },
-               {
+              {
                 "type": "torrentio",
                 "instanceId": "4ef",
                 "enabled": true,
@@ -2318,7 +2318,7 @@
                   ],
                   "providers": [],
                   "useMultipleInstances": false
-                }
+              }
               },
               {
                 "__if": "!inputs.includeAddon.noAnime",
@@ -2599,6 +2599,20 @@
                 "mediaTypes": [],
                 "useMultipleInstances": false
               }
+            },
+            {
+                "type": "torrentio",
+                "instanceId": "4ef",
+                "enabled": true,
+                "options": {
+                  "name": "Torrentio",
+                  "timeout": "{{inputs.includeAddon.timeout}}",
+                  "resources": [
+                    "stream"
+                  ],
+                  "providers": [],
+                  "useMultipleInstances": false
+                }
             },
             {
               "__if": "inputs.includeAddon.httpAddons and inputs.includeAddon.debridio",
