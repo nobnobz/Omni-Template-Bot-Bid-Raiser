@@ -6,7 +6,7 @@
       "description": "Fully configurable all-in-one setup based on Tamtaro's template and optimized for Omni and Fusion.",
       "source": "external",
       "author": "Bot-Bid-Raiser",
-      "version": "2.3",
+      "version": "2.3.0",
       "category": "AIO",
       "serviceRequired": false,
       "changelogUrl": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/AIOS/aios-changelog.md",
