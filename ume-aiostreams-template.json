@@ -14,7 +14,7 @@
         {
           "__if": "services",
           "id": "header.intro",
-          "name": "UME AIOStreams v2.1.1: Debrid/Usenet Mode",
+          "name": "UME AIOStreams: Debrid/Usenet Mode",
           "description": "A configurable AIOStreams setup optimized for Omni and Fusion.",
           "type": "alert",
           "intent": "success"
@@ -22,7 +22,7 @@
         {
           "__if": "!services",
           "id": "header.p2p",
-          "name": "UME AIOStreams v2.1.1: P2P Mode",
+          "name": "UME AIOStreams: P2P Mode",
           "description": "No services selected. In some countries, torrenting may be restricted, so a VPN or a debrid service may be required.",
           "type": "alert",
           "intent": "warning"
