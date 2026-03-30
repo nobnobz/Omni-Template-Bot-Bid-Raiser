@@ -2306,6 +2306,20 @@
                   "url": "https://sooti.info"
                 }
               },
+               {
+                "type": "torrentio",
+                "instanceId": "4ef",
+                "enabled": true,
+                "options": {
+                  "name": "Torrentio",
+                  "timeout": "{{inputs.includeAddon.timeout}}",
+                  "resources": [
+                    "stream"
+                  ],
+                  "providers": [],
+                  "useMultipleInstances": false
+                }
+              },
               {
                 "__if": "!inputs.includeAddon.noAnime",
                 "type": "nuvio-streams",
