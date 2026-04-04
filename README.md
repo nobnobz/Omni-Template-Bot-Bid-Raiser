@@ -172,8 +172,8 @@ This setup currently works best with these instances:
 
 **AIOMetadata**
 - https://aiometadatafortheweebs.midnightignite.me/configure/
-- https://aiometadatafortheweak.nhyira.dev/configure/
-
+- https://aiometadata.fortheweak.cloud/configure/
+  
 ---
 
 ### 1) Download the files
