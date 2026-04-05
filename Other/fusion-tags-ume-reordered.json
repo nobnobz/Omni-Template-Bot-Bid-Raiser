@@ -6,7 +6,7 @@
       "imageURL" : "https:\/\/raw.githubusercontent.com\/nobnobz\/Omni-Template-Bot-Bid-Raiser\/main\/Other\/regex%20tags\/REMUX1.png",
       "isEnabled" : true,
       "name" : "REMUX 1",
-      "pattern" : "(?:\bRemux T1\b|ʀᴇᴍᴜx ᴛ₁)",
+      "pattern" : "(?:\bRemux T1\b|ʀᴇᴍᴜх ᴛ₁)",
       "tagColor" : "#27C04F",
       "tagStyle" : "filled",
       "textColor" : "#FFFFFF",
