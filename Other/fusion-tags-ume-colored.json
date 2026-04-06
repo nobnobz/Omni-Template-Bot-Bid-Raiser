@@ -1,7 +1,7 @@
 {
   "filters": [
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "21e14dc7-be82-5f92-9e34-a8d6566a6290",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/REMUX1.png",
@@ -9,12 +9,12 @@
       "name": "REMUX 1",
       "pattern": "(?:(?=.*(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p)(?=.*\\b(?:3L|BiZKiT|BLURANiUM|BMF|CiNEPHiLES|FraMeSToR|PiRAMiDHEAD|PmP|WiLDCAT|ZQ)\\b)|\\b[Rr][Ee][Mm][Uu][Xx][ ._-]*[Tt]1\\b|ʀᴇᴍᴜ[xх] ᴛ₁)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#27C04F",
       "type": "filter"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "90c53162-4c63-5741-95e0-ecd06fe31bf1",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/REMUX2.png",
@@ -22,12 +22,12 @@
       "name": "REMUX 2",
       "pattern": "(?:(?=.*(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p)(?=.*\\b(?:ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN)\\b)|\\b[Rr][Ee][Mm][Uu][Xx][ ._-]*[Tt]2\\b|ʀᴇᴍᴜ[xх] ᴛ₂)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#27C04F",
       "type": "filter"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "25cec483-bbda-5ec3-b61f-64453dbf2e2e",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/REMUX3.png",
@@ -35,7 +35,7 @@
       "name": "REMUX 3",
       "pattern": "(?:(?=.*(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p)(?=.*\\b(?:iFT|NTb|PTP|SumVision|TOA)\\b)|\\b[Rr][Ee][Mm][Uu][Xx][ ._-]*[Tt]3\\b|ʀᴇᴍᴜ[xх] ᴛ₃)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#27C04F",
       "type": "filter"
     },
@@ -47,13 +47,13 @@
       "name": "REMUX Unranked",
       "pattern": "(?i)^(?=.*(?:[_. ]|\\d{4}p-|\\bhybrid-)(?:(?:bd|uhd)[-_. ]?)?remux\\b|(?:(?:bd|uhd)[-_. ]?)?remux[_. ]\\d{4}p)(?!.*\\b(?:3L|BiZKiT|BLURANiUM|BMF|CiNEPHiLES|FraMeSToR|PiRAMiDHEAD|PmP|WiLDCAT|ZQ|ATELiER|NCmt|playBD|SiCFoI|SURFINBIRD|TEPES|12GaugeShotgun|decibeL|EPSiLON|HiFi|KRaLiMaRKo|PTer|TRiToN|iFT|NTb|PTP|SumVision|TOA)\\b).*$",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#27C04F",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "f16f72e3-1670-5fb3-b674-fabb033a9456",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/Blue-Ray1.png",
@@ -61,12 +61,12 @@
       "name": "BLU-RAY 1",
       "pattern": "(?:(?=.*(?:BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|UHD|4K))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?!.*(?:WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:CtrlHD|MainFrame|W4NK3R|DON|BBQ|BMF|c0kE|Chotab|CRiSC|D-Z0N3|Dariush|decibeL|EbP|EDPH|LolHD|NCmt|PTer|TayTO|TDD|TnP|VietHD|ZQ|ZoroSenpai|Geek|NTb)\\b)|\\b(?:[Bb][Ll][Uu][ ._-]?[Rr][Aa][Yy]|[Bb][Dd])[ ._-]*[Tt]1\\b|(?:ʙʟᴜʀᴀʏ|ʙᴅ) ᴛ₁)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#4DB8E8",
       "type": "filter"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "3eeef69f-13a1-5b04-8db5-564fc8e6ab28",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/Blue-Ray2.png",
@@ -74,12 +74,12 @@
       "name": "BLU-RAY 2",
       "pattern": "(?:(?=.*(?:BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|UHD|4K))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?!.*(?:WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:HQMUX|ATELiER|EA|HiDt|HiSD|iFT|QOQ|SA89|sbR)\\b)|\\b(?:[Bb][Ll][Uu][ ._-]?[Rr][Aa][Yy]|[Bb][Dd])[ ._-]*[Tt]2\\b|(?:ʙʟᴜʀᴀʏ|ʙᴅ) ᴛ₂)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#4DB8E8",
       "type": "filter"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "c6c22559-0e46-50bd-a35a-ba9d280c7e2e",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/Blue-Ray3.png",
@@ -87,12 +87,12 @@
       "name": "BLU-RAY 3",
       "pattern": "(?:(?=.*(?:BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|UHD|4K))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bHybrid-)(?:(?:BD|UHD)[-_. ]?)?Remux\\b|(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\\d{4}p))(?!.*(?:WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:BHDStudio|hallowed|HONE|SPHD|WEBDV|HiFi|playHD|LoRD)\\b)|\\b(?:[Bb][Ll][Uu][ ._-]?[Rr][Aa][Yy]|[Bb][Dd])[ ._-]*[Tt]3\\b|(?:ʙʟᴜʀᴀʏ|ʙᴅ) ᴛ₃)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#4DB8E8",
       "type": "filter"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "acf8f544-3810-5b00-ac72-4835d3438e1a",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/Blue-Ray.png",
@@ -100,12 +100,12 @@
       "name": "BLU-RAY Unranked",
       "pattern": "(?i)(?:^(?=.*(?:bluray|blu-ray|hd-?dvd|bdmux|bd(?!$)|uhd|4k))(?!.*(?:(?:[_. ]|\\d{4}p-|\\bhybrid-)(?:(?:bd|uhd)[-_. ]?)?remux\\b|(?:(?:bd|uhd)[-_. ]?)?remux[_. ]\\d{4}p))(?!.*(?:web[-_. ]dl(?:mux)?|webdl|amazonhd|amazonsd|ituneshd|maxdomehd|netflixu?hd|webhd|hbomaxhd|disneyhd|[.]web[.](?:[xh][ .]?26[45]|avc|hevc|ddp?[ .]?5[.]1)|(?:720|1080|2160)p[-.]web[-.]|[-.]web[-.](?:720|1080|2160)p|(?:amzn|nf|dp)[. -]web[. -](?!rip)))(?!.*(?:webrip|web-rip|webmux))(?!.*\\b(?:CtrlHD|MainFrame|W4NK3R|DON|BBQ|BMF|c0kE|Chotab|CRiSC|D-Z0N3|Dariush|decibeL|EbP|EDPH|LolHD|NCmt|PTer|TayTO|TDD|TnP|VietHD|ZQ|ZoroSenpai|Geek|NTb|HQMUX|ATELiER|EA|HiDt|HiSD|iFT|QOQ|SA89|sbR|BHDStudio|hallowed|HONE|SPHD|WEBDV|HiFi|playHD|LoRD)\\b).*$|\\b(?:bluray|blu-ray|bd)[ ._-]*t(?:4|5|6|7|8)\\b|(?:ʙʟᴜʀᴀʏ|ʙᴅ) (?:ᴛ₄|ᴛ₅|ᴛ₆|ᴛ₇|ᴛ₈))",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#4DB8E8",
       "type": "filter"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "164db005-2bc2-590b-b7a0-3fb0e66bcde7",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/Web1.png",
@@ -113,12 +113,12 @@
       "name": "WEB 1",
       "pattern": "(?:(?=.*(?:WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[.]WEB[.](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[.]1)|(?:720|1080|2160)p[-.]WEB[-.]|[-.]WEB[-.](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:ABBIE|AJP69|BLUTONiUM|BYNDR|CMRG|CRFW|CRUD|GNOME|HONE|Kitsune|NOSiViD|NTb|NTG|PAXA|PEXA|RAWR|SiC|TEPES|TheFarm|XEPA|ZoroSenpai|ABBiE|CasStudio|CtrlHD|monkee|QOQ|RTN|T6D|ViSUM|APEX|FLUX|KiNGS|TOMMY)\\b)|\\b[Ww][Ee][Bb][ ._-]*[Tt]1\\b|ᴡᴇʙ ᴛ₁)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FF9A3D",
       "type": "filter"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "d0077e5d-d0d4-5367-8f9b-06f11938953e",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/Web2.png",
@@ -126,12 +126,12 @@
       "name": "WEB 2",
       "pattern": "(?:(?=.*(?:WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[.]WEB[.](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[.]1)|(?:720|1080|2160)p[-.]WEB[-.]|[-.]WEB[-.](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:dB|MiU|MZABI|playWEB|SbR|SMURF|XEBEC|4KBEC|CEBEX|Flights|PHOENiX|3cTWeB|BTW|Chotab|Cinefeel|CiT|Coo7|FC|iJP|iKA|iT00NZ|JETIX|KHN|NPMS|NYH|orbitron|PSiG|ROCCaT|RTFM|SA89|SDCC|TVSmash|WELP|DEEP|END|ETHiCS|KiMCHI|LAZY|SIGMA|SiGMA|SPiRiT)\\b)|\\b[Ww][Ee][Bb][ ._-]*[Tt]2\\b|ᴡᴇʙ ᴛ₂)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FF9A3D",
       "type": "filter"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "ef2684f5-3bc9-5e62-bd0c-12707d3458f7",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/Web3.png",
@@ -139,12 +139,12 @@
       "name": "WEB 3",
       "pattern": "(?:(?=.*(?:WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[.]WEB[.](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[.]1)|(?:720|1080|2160)p[-.]WEB[-.]|[-.]WEB[-.](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?=.*\\b(?:BLOOM|Dooky|GNOMiSSiON|HHWEB|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H|DRACULA|ViSiON)\\b)|\\b[Ww][Ee][Bb][ ._-]*[Tt]3\\b|ᴡᴇʙ ᴛ₃)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FF9A3D",
       "type": "filter"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "cbb353b1-8423-5df5-8a3a-daf305834c06",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/Web4.png",
@@ -152,12 +152,12 @@
       "name": "WEB 4",
       "pattern": "(?:\\b[Ww][Ee][Bb][ ._-]*[Tt]4\\b|ᴡᴇʙ ᴛ₄)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FF9A3D",
       "type": "filter"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "aa2d2b3d-6ae8-5da9-9dcf-504f70087508",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/Web5.png",
@@ -165,12 +165,12 @@
       "name": "WEB 5",
       "pattern": "(?:\\b[Ww][Ee][Bb][ ._-]*[Tt]5\\b|ᴡᴇʙ ᴛ₅)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FF9A3D",
       "type": "filter"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "4c04b5c6-2077-5c46-b7cd-6709391fcd37",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/Web.png",
@@ -178,12 +178,12 @@
       "name": "WEB Unranked",
       "pattern": "(?:(?i)^(?=.*(?:WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?!.*\\b(?:ABBIE|AJP69|BLUTONiUM|BYNDR|CMRG|CRFW|CRUD|GNOME|HONE|Kitsune|NOSiViD|NTb|NTG|PAXA|PEXA|RAWR|SiC|TEPES|TheFarm|XEPA|ZoroSenpai|ABBiE|CasStudio|CtrlHD|monkee|QOQ|RTN|T6D|ViSUM|APEX|FLUX|KiNGS|TOMMY|dB|MiU|MZABI|playWEB|SbR|SMURF|XEBEC|4KBEC|CEBEX|Flights|PHOENiX|3cTWeB|BTW|Chotab|Cinefeel|CiT|Coo7|FC|iJP|iKA|iT00NZ|JETIX|KHN|NPMS|NYH|orbitron|PSiG|ROCCaT|RTFM|SA89|SDCC|TVSmash|WELP|DEEP|END|ETHiCS|KiMCHI|LAZY|SIGMA|SiGMA|SPiRiT|BLOOM|Dooky|GNOMiSSiON|HHWEB|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H|DRACULA|ViSiON)\\b).*$|\\b[Ww][Ee][Bb][ ._-]*[Tt]6\\b|ᴡᴇʙ ᴛ₆)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FF9A3D",
       "type": "filter"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
       "id": "5f758265-9c4c-5aa5-bd5f-547553cd993d",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/SEADEX.png",
@@ -191,7 +191,7 @@
       "name": "SEADEX Release",
       "pattern": "(?:\\bSeaDex\\b|ᴀʟᴛ ʀᴇʟᴇᴀsᴇ|ʙᴇsᴛ ʀᴇʟᴇᴀsᴇ)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter"
     },
@@ -203,10 +203,10 @@
       "name": "2160p",
       "pattern": "(?i)^(?!.*\\b(?:1080[pi]?|720[pi]?|full[-\\s]?hd|fhd|hd1080|hd720)\\b).*?(?:\\b(bd|hd|m)?2160[pi]?\\b|\\b4k\\b|\\bu(ltra)?[ ._-]?hd\\b|\\b3840\\s?x\\s?\\d{4}\\b)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "550e8400-e29b-41d4-a716-446655440000",
@@ -216,10 +216,10 @@
       "name": "1080p",
       "pattern": "(?i)\\b(bd|hd|m)?1080[pi]?\\b|\\b1920\\s?x\\s?\\d{3,4}\\b",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FF9A3D",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "550e8400-e29b-41d4-a716-446655440000",
@@ -229,10 +229,10 @@
       "name": "720p",
       "pattern": "(?i)\\b(bd|hd|m)?720[pi]?\\b|\\b1280\\s?x\\s?\\d{3,4}\\b",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FF9A3D",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
@@ -242,10 +242,10 @@
       "name": "IMAX",
       "pattern": "\\bIMAX\\b",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
@@ -255,10 +255,10 @@
       "name": "DV",
       "pattern": "(?i)\\b(dv|dovi|dolby[ ._-]?vision)\\b",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
@@ -268,10 +268,10 @@
       "name": "HDR10+",
       "pattern": "(?i)^(?!.*\\b(?:dv|dovi|dolby[ ._-]?vision)\\b).*?(?:^|[^A-Za-z0-9])HDR\\s*10\\s*(?:\\+|plus|p)(?=[^A-Za-z0-9]|$).*",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
@@ -281,10 +281,10 @@
       "name": "HDR10+ (Without DV)",
       "pattern": "(?i)(?:^|[^A-Za-z0-9])HDR\\s*10\\s*(?:\\+|plus|p)(?=[^A-Za-z0-9]|$)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
@@ -294,10 +294,10 @@
       "name": "HDR10",
       "pattern": "(?i)^(?!.*\\b(dv|dovi|dolby[ ._-]?vision)\\b).*?(?:^|[^A-Za-z0-9])HDR\\s*10(?!\\s*(?:\\+|plus|p))(?=[^A-Za-z0-9]|$).*",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
@@ -307,10 +307,10 @@
       "name": "HDR10 (Without DV)",
       "pattern": "(?i)(?=.*\\b(dv|dovi|dolby[ ._-]?vision)\\b)(?=.*\\bhdr(?:\\s*10)?\\b)(?!.*\\bhdr\\s*10\\s*(?:\\+|plus|p)\\b).*\\b(dv|dovi|dolby[ ._-]?vision)\\b.*\\bhdr(?:\\s*10)?\\b",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
@@ -320,10 +320,10 @@
       "name": "HDR",
       "pattern": "(?i)^(?!.*\\b(dv|dovi|dolby[ ._-]?vision)\\b)(?!.*(?:^|[^A-Za-z0-9])HDR\\s*10\\s*(?:\\+|plus|p)(?=[^A-Za-z0-9]|$))(?!.*(?:^|[^A-Za-z0-9])HDR\\s*10(?=[^A-Za-z0-9]|$)).*?(?:^|[^A-Za-z0-9])HDR(?=[^A-Za-z0-9]|$).*",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
@@ -333,13 +333,13 @@
       "name": "ATMOS",
       "pattern": "(?=.*(^|[.\\s_\\-])[aA][tT][mM][oO][sS]([.\\s_\\-]|$))(?=.*(?:[dD][dD][pP]|[dD][dD]\\+|[eE]-?[aA][cC]3|[eE][aA][cC]3))",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
-      "borderColor": "#8F949C",
+      "borderColor": "#FFFFFF",
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
       "id": "6f4637af-d45c-5ef9-9a35-7adc61ab5a0e",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/TrueHD.png",
@@ -347,7 +347,7 @@
       "name": "TRUEHD",
       "pattern": "(?i)(?:\\btrue[ ._-]?hd\\b|^(?=.*\\batmos\\b)(?=.*\\bremux\\b)(?!.*\\b(?:true[ ._-]?hd|ddp|dd\\+|e-?ac3|eac3)\\b).+$)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter"
     },
@@ -359,10 +359,10 @@
       "name": "DTS-X",
       "pattern": "(?i)(?=.*\\b(dts[-_.: ]?x7?)\\b(?![-_. ]?(26[456])))(?!.*\\bDTS[ .]?[1-9]\\b)(?!.*\\bDD[^a-z+]\\b)(?!.*\\b(ac-?3)\\b)(?!.*\\bDD[P+]\\b)(?!.*\\b(e[-_. ]?ac-?3)\\b)(?!.*\\bTrue[ .-]?HD\\b)(?!.*\\bATMOS(\\\\b|\\\\d)\\b)(?!.*\\bFLAC\\b)(?!.*\\bAAC\\b)(?!.*\\b(l?)PCM\\b)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
@@ -372,10 +372,10 @@
       "name": "DTS-HD MA",
       "pattern": "(?i)(?=.*\\b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))(\\b|\\d))(?!.*\\b(True[ .-]?HD|ATMOS)(\\b|\\d))(?!.*\\bDD[P+]|(e[-_. ]?ac-?3)\\b)(?!.*\\bDD[^a-z+]|(?<!e-)\\b(ac-?3)\\b)(?!.*\\b(dts[-_.: ]?x7?)\\b(?![-_. ]?(26[456])))(?!.*\\bFLAC(\\b|\\d))(?!.*\\bAAC(\\b|\\d))(?!.*\\b(l?)PCM(\\b|\\d))(?!.*dts[-. ]?(es|(hd[. ]?)?(hr|hi)))",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
@@ -385,10 +385,10 @@
       "name": "DTS-HD",
       "pattern": "(?i)\\bdts[ .\\-_]?hd(?![ .\\-_]?ma)\\b",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
@@ -398,10 +398,10 @@
       "name": "DOLBY DIGITAL +",
       "pattern": "(?i)^(?!.*(?:^|[.\\s_\\-])atmos(?:[.\\s_\\-]|$)).*(?:(d(?:olby)?[ .\\-_]?d(?:igital)?[ .\\-_]?(?:p(?:lus)?|\\+)(?:[ .\\-_]?(?:5[ .\\-_]?1|7[ .\\-_]?1))?)|e[ .\\-_]?ac[ .\\-_]?3).*",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
@@ -411,10 +411,10 @@
       "name": "DTS",
       "pattern": "(?i)^(?=.*\\bDTS(?:\\b|\\d)) (?!.*\\b(?:dts[-_. ]?(?:ma|hd(?:[-_. ]?ma)?|xll))(?:\\b|\\d)) (?!.*dts[-. ]?(?:es|(?:hd[. ]?)?(?:hr|hi))) (?!.*(?:\\bDD[P+]|(?:\\be[-_. ]?ac-?3\\b))) (?!.*(?:True[ .-]?HD|\\bATMOS(?:\\b|\\d))) (?!.*(?:\\bDD[^a-z+]|(?<!e-)\\b(?:ac-?3)\\b)) (?!.*\\b(?:dts[-_.: ]?x7?)\\b(?![-_. ]?(?:26[456]))) (?!.*\\bFLAC(?:\\b|\\d)) (?!.*\\bAAC(?:\\b|\\d)) (?!.*\\b(?:l?)PCM(?:\\b|\\d)).*$",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFBE01",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
@@ -424,10 +424,10 @@
       "name": "DOLBY DIGITAL",
       "pattern": "(?i)(?=.*\\bDD[^a-z+]|(?<!e-)\\b(ac-?3)\\b)(?!.*\\bDD[P+]|(e[-_. ]?ac-?3)\\b)(?!.*\\b(True[ .-]?HD|ATMOS)(\\b|\\d))(?!.*\\bDTS(\\b|\\d))(?!.*\\bFLAC(\\b|\\d))(?!.*\\bAAC(\\b|\\d))(?!.*\\b(l?)PCM(\\b|\\d)) ",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c",
@@ -437,10 +437,10 @@
       "name": "7.1 CH",
       "pattern": "(?i)(?=.*[^0-9][7-8][ .][0-1]\\b)(?!.*[^0-9]5[ .][0-1]\\b)(?!.*[^0-9]6[ .][0-1]\\b)(?!.*(?<!repac)[^0-9][1-4][ .][0-1]|\\\\b(Stereo|Mono)\\\\b)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c",
@@ -450,10 +450,10 @@
       "name": "6.1 CH",
       "pattern": "(?i)(?=.*[^0-9]6[ .][0-1]\\b)(?!.*[^0-9][7-8][ .][0-1]\\b)(?!.*[^0-9]5[ .][0-1]\\b)(?!.*(?<!repac)[^0-9][1-4][ .][0-1]\\b|\\\\b(Stereo|Mono)\\\\b)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     },
     {
       "groupId": "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c",
@@ -463,10 +463,10 @@
       "name": "5.1 CH",
       "pattern": "(?i)(?=.*[^0-9]5[ .][0-1]\\b)(?!.*[^0-9]6[ .][0-1]\\b)(?!.*[^0-9][7-8][ .][0-1]\\b)(?!.*(?<!repac)[^0-9][1-4][ .][0-1]\\b|\\\\b(Stereo|Mono)\\\\b)",
       "tagColor": "#16181C",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#8F949C"
+      "borderColor": "#FFFFFF"
     }
   ],
   "groups": [
