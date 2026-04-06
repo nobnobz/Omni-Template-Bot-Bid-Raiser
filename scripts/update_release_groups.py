@@ -11,7 +11,7 @@ import urllib.error
 import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Iterable, List, Tuple
+from typing import Dict, Iterable, List, Set, Tuple
 
 UPSTREAM_URL = "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json"
 DEFAULT_TARGET_PATH = Path("Other/fusion-tags-ume.json")
@@ -59,6 +59,8 @@ BOUNDARY_LIST_PATTERN = re.compile(
 
 @dataclass(frozen=True)
 class UpstreamEntry:
+    """Single upstream regexes.json record containing a human name and regex pattern."""
+
     name: str
     pattern: str
 
@@ -169,7 +171,7 @@ def resolve_tier_conflicts(
     promotion_logs: Dict[str, List[str]] = {category: [] for category in CATEGORY_ORDER}
 
     for category in CATEGORY_ORDER:
-        seen_exact_per_tier: Dict[str, set[str]] = {tier: set() for tier in TIERS}
+        seen_exact_per_tier: Dict[str, Set[str]] = {tier: set() for tier in TIERS}
         best_by_lower: Dict[str, Tuple[str, str]] = {}
 
         for tier in TIERS:
@@ -206,7 +208,7 @@ def resolve_tier_conflicts(
                     # Same-tier mixed-case variants are preserved to keep case-sensitive behavior by default.
                     final[category][tier].append(group)
 
-        seen_unranked: set[str] = set()
+        seen_unranked: Set[str] = set()
         for tier in TIERS:
             for group in final[category][tier]:
                 if group not in seen_unranked:

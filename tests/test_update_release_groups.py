@@ -51,6 +51,8 @@ class UpdateReleaseGroupsTests(unittest.TestCase):
         ]
 
         merged = merge_source_groups(entries)
+        # merge_source_groups intentionally only maps/sums source entries;
+        # deduplication is tested separately in resolve_tier_conflicts.
         self.assertEqual(merged["REMUX"]["T1"], ["A", "B", "B", "C"])
         self.assertEqual(merged["BLU-RAY"]["T1"], ["H", "I", "J"])
         self.assertEqual(merged["WEB"]["T2"], ["T", "U"])
