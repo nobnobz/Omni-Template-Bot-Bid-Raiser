@@ -169,12 +169,13 @@
       "type" : "filter"
     },
     {
+      "borderColor" : "#FF6904",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "4c04b5c6-2077-5c46-b7cd-6709391fcd37",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/nobnobz\/Omni-Template-Bot-Bid-Raiser\/main\/Other\/regex%20tags\/Web.png",
       "isEnabled" : true,
       "name" : "WEB Unranked",
-      "pattern" : "(?i)^(?=.*(?:WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?!.*\\b(?:ABBIE|AJP69|BLUTONiUM|BYNDR|CMRG|CRFW|CRUD|GNOME|HONE|Kitsune|NOSiViD|NTb|NTG|PAXA|PEXA|RAWR|SiC|TEPES|TheFarm|XEPA|ZoroSenpai|ABBiE|CasStudio|CtrlHD|monkee|QOQ|RTN|T6D|ViSUM|APEX|FLUX|KiNGS|TOMMY|dB|MiU|MZABI|playWEB|SbR|SMURF|XEBEC|4KBEC|CEBEX|Flights|PHOENiX|3cTWeB|BTW|Chotab|Cinefeel|CiT|Coo7|FC|iJP|iKA|iT00NZ|JETIX|KHN|NPMS|NYH|orbitron|PSiG|ROCCaT|RTFM|SA89|SDCC|TVSmash|WELP|DEEP|END|ETHiCS|KiMCHI|LAZY|SIGMA|SiGMA|SPiRiT|BLOOM|Dooky|GNOMiSSiON|HHWEB|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H|DRACULA|ViSiON)\\b).*$",
+      "pattern" : "(?:(?i)^(?=.*(?:WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|HBOMaxHD|DisneyHD|[. ]WEB[. ](?:[xh][ .]?26[45]|AVC|HEVC|DDP?[ .]?5[. ]1)|(?:720|1080|2160)p[-. ]WEB[-. ]|[-. ]WEB[-. ](?:720|1080|2160)p|(?:AMZN|NF|DP)[. -]WEB[. -](?!Rip)|WebRip|Web-Rip|WEBMux))(?!.*\\b(?:ABBIE|AJP69|BLUTONiUM|BYNDR|CMRG|CRFW|CRUD|GNOME|HONE|Kitsune|NOSiViD|NTb|NTG|PAXA|PEXA|RAWR|SiC|TEPES|TheFarm|XEPA|ZoroSenpai|ABBiE|CasStudio|CtrlHD|monkee|QOQ|RTN|T6D|ViSUM|APEX|FLUX|KiNGS|TOMMY|dB|MiU|MZABI|playWEB|SbR|SMURF|XEBEC|4KBEC|CEBEX|Flights|PHOENiX|3cTWeB|BTW|Chotab|Cinefeel|CiT|Coo7|FC|iJP|iKA|iT00NZ|JETIX|KHN|NPMS|NYH|orbitron|PSiG|ROCCaT|RTFM|SA89|SDCC|TVSmash|WELP|DEEP|END|ETHiCS|KiMCHI|LAZY|SIGMA|SiGMA|SPiRiT|BLOOM|Dooky|GNOMiSSiON|HHWEB|NINJACENTRAL|SLiGNOME|SwAgLaNdEr|T4H|DRACULA|ViSiON)\\b).*$|\\b[Ww][Ee][Bb][ ._-]*[Tt]6\\b|ᴡᴇʙ ᴛ₆)",
       "tagColor" : "#FF6904",
       "tagStyle" : "filled",
       "textColor" : "#FFFFFF",
