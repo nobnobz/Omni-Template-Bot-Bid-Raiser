@@ -21,11 +21,11 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Run updater
-        run: python scripts/update_release_groups.py
-
       - name: Run updater tests
         run: python -m unittest discover -s tests
+
+      - name: Run updater
+        run: python scripts/update_release_groups.py
 
       - name: Commit and push if changed
         run: |

@@ -156,7 +156,13 @@ def merge_source_groups(entries: Iterable[UpstreamEntry]) -> Dict[str, Dict[str,
 
 def resolve_tier_conflicts(
     merged: Dict[str, Dict[str, List[str]]]
-) -> Tuple[Dict[str, Dict[str, List[str]]], Dict[str, List[str]], Dict[str, List[str]], Dict[str, int]]:
+) -> Tuple[
+    Dict[str, Dict[str, List[str]]],
+    Dict[str, List[str]],
+    Dict[str, List[str]],
+    Dict[str, List[str]],
+    Dict[str, int],
+]:
     final: Dict[str, Dict[str, List[str]]] = {category: {tier: [] for tier in TIERS} for category in CATEGORY_ORDER}
     unranked_exclusions: Dict[str, List[str]] = {category: [] for category in CATEGORY_ORDER}
     duplicate_logs: Dict[str, List[str]] = {category: [] for category in CATEGORY_ORDER}
