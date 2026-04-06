@@ -331,7 +331,8 @@ def main() -> int:
 
 if __name__ == "__main__":
     try:
-        raise SystemExit(main())
+        exit_code = main()
     except RuntimeError as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
-        raise SystemExit(1)
+        sys.exit(1)
+    sys.exit(exit_code)
