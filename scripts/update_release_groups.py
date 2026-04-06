@@ -23,19 +23,19 @@ CATEGORY_ORDER = ("REMUX", "BLU-RAY", "WEB")
 # Explicit source-to-target mapping requested by repository owner.
 SOURCE_MAPPING = {
     "REMUX": {
-        "T1": ["Radarr Remux T1", "Sonarr Remux T1"],
-        "T2": ["Radarr Remux T2", "Sonarr Remux T2"],
-        "T3": ["Radarr Remux T3", "Sonarr Remux T3"],
+        "T1": [("Radarr Remux T1", True), ("Sonarr Remux T1", True)],
+        "T2": [("Radarr Remux T2", True), ("Sonarr Remux T2", True)],
+        "T3": [("Radarr Remux T3", True), ("Sonarr Remux T3", False)],
     },
     "BLU-RAY": {
-        "T1": ["Radarr UHD Bluray T1", "Radarr HD Bluray T1", "Sonarr HD Bluray T1"],
-        "T2": ["Radarr UHD Bluray T2", "Radarr HD Bluray T2", "Sonarr HD Bluray T2"],
-        "T3": ["Radarr UHD Bluray T3", "Radarr HD Bluray T3", "Sonarr HD Bluray T3"],
+        "T1": [("Radarr UHD Bluray T1", True), ("Radarr HD Bluray T1", True), ("Sonarr HD Bluray T1", True)],
+        "T2": [("Radarr UHD Bluray T2", True), ("Radarr HD Bluray T2", True), ("Sonarr HD Bluray T2", True)],
+        "T3": [("Radarr UHD Bluray T3", True), ("Radarr HD Bluray T3", True), ("Sonarr HD Bluray T3", False)],
     },
     "WEB": {
-        "T1": ["Radarr Web T1", "Sonarr Web T1", "Web T1"],
-        "T2": ["Radarr Web T2", "Sonarr Web T2", "Web T2"],
-        "T3": ["Radarr Web T3", "Sonarr Web T3", "Web T3"],
+        "T1": [("Radarr Web T1", True), ("Sonarr Web T1", True), ("Web T1", True)],
+        "T2": [("Radarr Web T2", True), ("Sonarr Web T2", True), ("Web T2", False)],
+        "T3": [("Radarr Web T3", True), ("Sonarr Web T3", True), ("Web T3", False)],
     },
 }
 
@@ -107,6 +107,7 @@ def fetch_upstream_entries(source_url: str) -> List[UpstreamEntry]:
 def extract_groups_from_pattern(pattern: str) -> List[str]:
     """Extract release groups from \b-bounded token lists inside regex patterns."""
     normalized = pattern.replace("\x08", r"\b")
+    normalized = normalized.replace(r"\\b", r"\b")
     groups: List[str] = []
 
     for match in BOUNDARY_LIST_PATTERN.finditer(normalized):
@@ -127,13 +128,18 @@ def merge_source_groups(entries: Iterable[UpstreamEntry]) -> Dict[str, Dict[str,
 
     for category in CATEGORY_ORDER:
         for tier in TIERS:
-            mapped_names = SOURCE_MAPPING[category][tier]
-            for mapped_name in mapped_names:
+            mapped_entries = SOURCE_MAPPING[category][tier]
+            for mapped_name, required in mapped_entries:
                 source_entries = by_name.get(mapped_name)
                 if not source_entries:
-                    raise RuntimeError(
-                        f"Upstream format changed: source entry '{mapped_name}' not found for {category} {tier}."
+                    if required:
+                        raise RuntimeError(
+                            f"Upstream format changed: source entry '{mapped_name}' not found for {category} {tier}."
+                        )
+                    print(
+                        f"[source] Optional source '{mapped_name}' not found for {category} {tier}; skipping."
                     )
+                    continue
 
                 for source_entry in source_entries:
                     source_groups = extract_groups_from_pattern(source_entry.pattern)
@@ -169,6 +175,8 @@ def resolve_tier_conflicts(
                     continue
                 seen_exact_per_tier[tier].add(group)
 
+                # Normalize to lowercase for cross-tier conflict checks so case-only variants
+                # (e.g. ABBIE vs ABBiE) resolve to the highest-priority tier spelling.
                 lower_key = group.lower()
                 existing = best_by_lower.get(lower_key)
                 if existing is None:
