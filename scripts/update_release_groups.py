@@ -20,6 +20,7 @@ DEFAULT_TARGET_PATH = Path("Other/fusion-tags-ume.json")
 TARGET_TEMPLATE_MAP = {
     "fusion-tags-ume.json": Path("Other/fusion-tags-ume-copy.json"),
     "fusion-tags-ume-colored.json": Path("Other/fusion-tags-ume-colored-copy.json"),
+    "fustion-tags-ume-minimalistic.json": Path("Other/fustion-tags-ume-minimalistic.json"),
 }
 
 FAMILY_TIERS = {

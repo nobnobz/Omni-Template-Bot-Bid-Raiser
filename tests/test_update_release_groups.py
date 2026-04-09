@@ -33,6 +33,12 @@ class UpdateReleaseGroupsTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "copy template file"):
             resolve_template_path(Path("Other/fusion-tags-ume-copy.json"), None)
 
+    def test_minimalistic_target_uses_self_template(self):
+        self.assertEqual(
+            resolve_template_path(Path("Other/fustion-tags-ume-minimalistic.json"), None),
+            Path("Other/fustion-tags-ume-minimalistic.json"),
+        )
+
     def test_extract_groups_from_pattern(self):
         pattern = r"/^(?=.*\\b(?:ABBIE|ABBiE|NTb)\\b).*/i"
         self.assertEqual(extract_groups_from_pattern(pattern), ["ABBIE", "ABBiE", "NTb"])
