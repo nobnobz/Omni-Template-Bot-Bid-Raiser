@@ -1,7 +1,7 @@
 {
   "filters": [
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "21e14dc7-be82-5f92-9e34-a8d6566a6290",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_remux%20t1.png",
@@ -14,7 +14,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "90c53162-4c63-5741-95e0-ecd06fe31bf1",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_remux%20t2.png",
@@ -27,7 +27,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "25cec483-bbda-5ec3-b61f-64453dbf2e2e",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_remux%20t3.png",
@@ -50,10 +50,10 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "f16f72e3-1670-5fb3-b674-fabb033a9456",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_bluray%20t1.png",
@@ -66,7 +66,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "3eeef69f-13a1-5b04-8db5-564fc8e6ab28",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_bluray%20t2.png",
@@ -79,7 +79,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "c6c22559-0e46-50bd-a35a-ba9d280c7e2e",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_bluray%20t3.png",
@@ -92,7 +92,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "5f13c54e-c3c9-5465-8d40-20035cf92db4",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_bluray%20t4.png",
@@ -105,7 +105,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "79429d97-c84e-5b68-ba86-989c7b53c196",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_bluray%20t5.png",
@@ -118,7 +118,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "4e271fd9-bbe2-58fa-a198-a78e6c3c0351",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_bluray%20t6.png",
@@ -131,7 +131,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "f520f0ea-e9fb-5883-b912-9f5db4c2f04c",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_bluray%20t7.png",
@@ -144,7 +144,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "72458de0-9754-5fbb-b2d4-7e3d7689c5ad",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_bluray%20t8.png",
@@ -157,7 +157,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "acf8f544-3810-5b00-ac72-4835d3438e1a",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_bluray%20unranked.png",
@@ -170,7 +170,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "164db005-2bc2-590b-b7a0-3fb0e66bcde7",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_web%20t1.png",
@@ -183,7 +183,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "d0077e5d-d0d4-5367-8f9b-06f11938953e",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_web%20t2.png",
@@ -196,7 +196,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "ef2684f5-3bc9-5e62-bd0c-12707d3458f7",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_web%20t3.png",
@@ -209,7 +209,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "cbb353b1-8423-5df5-8a3a-daf305834c06",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_web%20t4.png",
@@ -222,7 +222,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "aa2d2b3d-6ae8-5da9-9dcf-504f70087508",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_web%20t5.png",
@@ -235,7 +235,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "9da62467-ed79-5b63-9061-4c00231dcb56",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_web%20t6.png",
@@ -248,7 +248,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id": "4c04b5c6-2077-5c46-b7cd-6709391fcd37",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_web%20unranked.png",
@@ -261,7 +261,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
       "id": "5f758265-9c4c-5aa5-bd5f-547553cd993d",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_SEADEX.png",
@@ -284,7 +284,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "550e8400-e29b-41d4-a716-446655440000",
@@ -297,7 +297,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "550e8400-e29b-41d4-a716-446655440000",
@@ -310,7 +310,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
@@ -323,7 +323,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
@@ -336,7 +336,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
@@ -349,7 +349,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
@@ -362,7 +362,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
@@ -375,7 +375,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
@@ -388,7 +388,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
@@ -401,7 +401,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
@@ -414,10 +414,10 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
-      "borderColor": "#2EFFFFFF",
+      "borderColor": "#22FFFFFF",
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
       "id": "6f4637af-d45c-5ef9-9a35-7adc61ab5a0e",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_TrueHD.png",
@@ -440,7 +440,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
@@ -453,7 +453,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
@@ -466,7 +466,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
@@ -479,7 +479,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
@@ -492,7 +492,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
@@ -505,7 +505,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c",
@@ -518,7 +518,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c",
@@ -531,7 +531,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     },
     {
       "groupId": "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c",
@@ -544,7 +544,7 @@
       "tagStyle": "filled and bordered",
       "textColor": "#FFFFFF",
       "type": "filter",
-      "borderColor": "#2EFFFFFF"
+      "borderColor": "#22FFFFFF"
     }
   ],
   "groups": [
