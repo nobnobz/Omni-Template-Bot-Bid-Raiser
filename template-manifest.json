@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-18T09:42:47.275Z",
+  "generatedAt": "2026-04-18T09:43:00.731Z",
   "templates": [
     {
       "id": "ume-omni-template-v3.0.json",
@@ -39,9 +39,9 @@
       "version": "v2.2.1"
     },
     {
-      "id": "ume-aiometadata-catalogs-only-v2.2.1.json",
+      "id": "Older Versions/v2.2/ume-aiometadata-catalogs-only-v2.2.1.json",
       "name": "UME AIOMetadata (Catalogs Only) v2.2.1",
-      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-aiometadata-catalogs-only-v2.2.1.json",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Older%20Versions/v2.2/ume-aiometadata-catalogs-only-v2.2.1.json",
       "version": "v2.2.1"
     },
     {
