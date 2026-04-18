@@ -172,5 +172,119 @@
     "title": "Christmas",
     "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Christmas.mp4",
     "backgroundURL": "https://i.postimg.cc/bNRSJgcw/Christmas.png"
+  },
+  {
+    "id": "978ca4b4-91c4-4790-9c7e-d35ba314b555",
+    "title": "Netflix",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/netflix.mp4",
+    "backgroundURL": "https://i.postimg.cc/nc5NPC14/netflix.png"
+  },
+  {
+    "id": "f1d1b42f-4198-485a-85d8-6d1f1517acce",
+    "title": "Disney+",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/disney%2B.mp4",
+    "backgroundURL": "https://i.postimg.cc/HsKFhVtX/disney.png"
+  },
+  {
+    "id": "64d0e002-0248-4cf8-b5d6-123a34373a5f",
+    "title": "Apple TV",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/apple%20tv.mp4",
+    "backgroundURL": "https://i.postimg.cc/28JgKVxL/apple-tv.png"
+  },
+  {
+    "id": "0362ed1d-45cc-477b-ab8e-87e737d2a965",
+    "title": "Prime Video",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/prime%20video.mp4",
+    "backgroundURL": "https://i.postimg.cc/JzkSVMTy/prime-video.png"
+  },
+  {
+    "id": "8364db69-a74c-42d7-910a-862bfba67bf2",
+    "title": "HBO Max",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/hbo%20max.mp4",
+    "backgroundURL": "https://i.postimg.cc/15TbjfK6/hbo-max.png"
+  },
+  {
+    "id": "751740f7-e75e-44d2-8436-30989f0d09be",
+    "title": "Paramount+",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/paramount%2B.mp4",
+    "backgroundURL": "https://i.postimg.cc/9Q7s5Cxr/paramount.png"
+  },
+  {
+    "id": "bd7f852a-5b5c-41f7-8fbf-61a3f3cf1444",
+    "title": "Hulu",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/hulu.mp4",
+    "backgroundURL": "https://i.postimg.cc/bNM4BsR1/hulu.png"
+  },
+  {
+    "id": "36bdb3b0-bfe5-4125-8a1b-ee5ad940f69f",
+    "title": "Peacock",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/peacock.mp4",
+    "backgroundURL": "https://i.postimg.cc/fR91nDHV/peacock.png"
+  },
+  {
+    "id": "92652ab5-145b-4c43-b9ea-76cbbdadaf10",
+    "title": "STARZ",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/starz.mp4",
+    "backgroundURL": "https://i.postimg.cc/4NZrCrDB/starz.png"
+  },
+  {
+    "id": "9e923abc-ecab-408b-96d7-184c86244902",
+    "title": "MUBI",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/mubi.mp4",
+    "backgroundURL": "https://i.postimg.cc/QNcRyXym/mubi.png"
+  },
+  {
+    "id": "dd182a3d-dc94-43b9-be71-4d7fb5f1a510",
+    "title": "Crunchyroll",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/crunchyroll.mp4",
+    "backgroundURL": "https://i.postimg.cc/Prc0RPMp/crunchyroll.png"
+  },
+  {
+    "id": "853d3446-664a-412b-b974-d5191930172d",
+    "title": "The Criterion Channel",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/criterion.mp4",
+    "backgroundURL": "https://i.postimg.cc/7YcjWfN2/criterion.png"
+  },
+  {
+    "id": "9a46e01b-622f-4e65-83e6-33e2bd6ec27c",
+    "title": "Shudder",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/shudder.mp4",
+    "backgroundURL": "https://i.postimg.cc/L81GK2yY/shudder.png"
+  },
+  {
+    "id": "d7573d6c-0080-4914-b597-195e9ab97d2f",
+    "title": "AMC+",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/amc%2B.mp4",
+    "backgroundURL": "https://i.postimg.cc/KctdHZHg/amc.png"
+  },
+  {
+    "id": "153808e5-88c8-407d-b9b5-b08d2957af2c",
+    "title": "britbox",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/britbox.mp4",
+    "backgroundURL": "https://i.postimg.cc/pX736pBm/britbox.png"
+  },
+  {
+    "id": "3c795950-fdb5-4f49-97de-c5fb486787ed",
+    "title": "Discovery+",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/discovery%2B.mp4",
+    "backgroundURL": "https://i.postimg.cc/2jnPKzKL/discovery.png"
+  },
+  {
+    "id": "1d2cf333-78f7-4d0b-8066-9aecead88e06",
+    "title": "Curiosity Stream",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/curiosity.mp4",
+    "backgroundURL": "https://i.postimg.cc/mZ705b57/curiosity.png"
+  },
+  {
+    "id": "1276b046-3316-4b9a-961f-b51a266f8ebc",
+    "title": "MagellanTV",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/magellantv.mp4",
+    "backgroundURL": "https://i.postimg.cc/kMWkpnpx/magellantv.png"
+  },
+  {
+    "id": "66ac6c8a-ec12-40a5-8e74-b82d6245fdd8",
+    "title": "Netflix Kids",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/netflix%20kids.mp4",
+    "backgroundURL": "https://i.postimg.cc/fTZ646GC/netflix-kids.png"
   }
 ]
