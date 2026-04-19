@@ -334,5 +334,53 @@
     "title": "Berlin International Film Festival Awards",
     "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/awards/berlinale.mp4",
     "backgroundURL": "https://i.postimg.cc/hGFmKq0N/berlinale.png"
+  },
+  {
+    "id": "54afd1f1-207d-4ddb-912a-be021d684555",
+    "title": "Watchlist",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/discover/watchlist.mp4",
+    "backgroundURL": "https://i.postimg.cc/vH9k7TLG/watchlist.png"
+  },
+  {
+    "id": "bdf49c8d-7d73-47f1-9f7a-1354488181ef",
+    "title": "Trending Movies",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/discover/trending%20movies.mp4",
+    "backgroundURL": "https://i.postimg.cc/gkHRm77c/trending-movies.png"
+  },
+  {
+    "id": "76a18d5d-a119-4c33-bf7b-5efa37b6c2fe",
+    "title": "Trending Shows",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/discover/trending%20shows.mp4",
+    "backgroundURL": "https://i.postimg.cc/nhVmzk8c/trending-shows.png"
+  },
+  {
+    "id": "55bc3ed2-3e87-463b-accb-fbe5b27b93b1",
+    "title": "Latest Movies",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/discover/latest%20movies.mp4",
+    "backgroundURL": "https://i.postimg.cc/sD4SsLLj/latest-movies.png"
+  },
+  {
+    "id": "2edda9b9-dd06-44f7-8a13-9724f5ff8080",
+    "title": "Latest Shows",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/discover/latest%20shows.mp4",
+    "backgroundURL": "https://i.postimg.cc/TYJmfssR/latest-shows.png"
+  },
+  {
+    "id": "fb4ce2a2-4f4c-49e0-bedc-05e81eb40afa",
+    "title": "Airing Soon",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/discover/airing%20soon.mp4",
+    "backgroundURL": "https://i.postimg.cc/CxM81NyV/airing-soon.png"
+  },
+  {
+    "id": "046c0bd2-01a9-461a-ae45-5c15c9eccea6",
+    "title": "Upcoming",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/discover/upcoming.mp4",
+    "backgroundURL": "https://i.postimg.cc/K8cTzNXj/upcoming.png"
+  },
+  {
+    "id": "102a296c-6ffe-44d1-8f4c-8dc5a378c2c2",
+    "title": "Watched",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/discover/watched.mp4",
+    "backgroundURL": "https://i.postimg.cc/qMnScqX4/watched.png"
   }
 ]
