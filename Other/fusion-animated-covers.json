@@ -14,25 +14,25 @@
   {
     "id": "028d99c5-3620-4ce6-ab23-3bcee2b2af6c",
     "title": "00s Movies",
-    "videoURL": "https://github.com/nobnobz/Omni-Template-Bot-Bid-Raiser/raw/refs/heads/main/Other/animated%20covers/decades/00s%20video.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/decades/00s_soft_reset_fadefast.mp4",
     "backgroundURL": "https://i.postimg.cc/RhwN1VJK/00s.png"
   },
   {
     "id": "7628deeb-7908-4b1b-8137-dab1009dd684",
     "title": "90s Movies",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/decades/90s%20video.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/decades/90s_soft_reset_fadefast.mp4",
     "backgroundURL": "https://i.postimg.cc/J7XDCKYH/90s.png"
   },
   {
     "id": "1db2d2fe-a7e7-4cec-95fa-aea5ad6f5b84",
     "title": "80s Movies",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/decades/80s%20video.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/decades/80s_soft_reset_fadefast.mp4",
     "backgroundURL": "https://i.postimg.cc/qBKhHQDz/80s.png"
   },
   {
     "id": "c0fcf305-41cb-4dd3-8b5e-cc6ef4b59c92",
     "title": "70s Movies",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/decades/70s%20video.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/decades/70s_soft_reset_fadefast.mp4",
     "backgroundURL": "https://i.postimg.cc/VvXd9L0j/70s.png"
   },
   {
