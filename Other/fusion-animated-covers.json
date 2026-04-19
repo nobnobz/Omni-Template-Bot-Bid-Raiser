@@ -44,7 +44,7 @@
   {
     "id": "ce5aa174-1a30-476e-8158-d9064a132986",
     "title": "Comedy",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Comedy_compressed.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Comedy.mp4",
     "backgroundURL": "https://i.postimg.cc/3xJ4DGY5/Comedy.png"
   },
   {
@@ -74,13 +74,13 @@
   {
     "id": "3841f603-e213-409c-b241-4815ead7f986",
     "title": "Romance",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Romance_compressed.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Romance.mp4",
     "backgroundURL": "https://i.postimg.cc/Jz6y3hzv/Romance.png"
   },
   {
     "id": "7a14f2af-8e71-4247-a066-4bf970dbfdbb",
     "title": "Drama",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Drama_compressed.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Drama.mp4",
     "backgroundURL": "https://i.postimg.cc/Gmh8sDd2/Drama.png"
   },
   {
@@ -92,7 +92,7 @@
   {
     "id": "a1f8fb22-8351-4eae-b7e6-0caa656fcb2d",
     "title": "Adventure",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Adventure_compressed.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Adventure.mp4",
     "backgroundURL": "https://i.postimg.cc/kXyR4srj/Adventure.png"
   },
   {
@@ -110,7 +110,7 @@
   {
     "id": "3ac5a239-ae7a-48a4-a2d9-2948344e189c",
     "title": "Horror",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Horror_compressed.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Horror.mp4",
     "backgroundURL": "https://i.postimg.cc/htyJ8Gtm/Horror.png"
   },
   {
@@ -128,19 +128,19 @@
   {
     "id": "27bf7292-bdad-4265-bbfa-d610c4b8da68",
     "title": "War",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/War_compressed.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/War.mp4",
     "backgroundURL": "https://i.postimg.cc/s2MMTRM8/War.png"
   },
   {
     "id": "c54ec1a1-ecb5-4cdf-9834-ecca5dc29dcf",
     "title": "Musical",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Music_compressed.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Music.mp4",
     "backgroundURL": "https://i.postimg.cc/527H5t28/Music.png"
   },
   {
     "id": "21df710d-fc38-4fb8-89bc-a8f79d1d083f",
     "title": "Stand-Up Comedy",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Stand-Up%20Comedy_compressed.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Stand-Up%20Comedy.mp4",
     "backgroundURL": "https://i.postimg.cc/htyJ8GtN/Stand-Up-Comedy.png"
   },
   {
@@ -152,13 +152,13 @@
   {
     "id": "452d79f8-5b92-4c5a-907f-2e58368d47c8",
     "title": "KDrama",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/KDrama_compressed.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/KDrama.mp4",
     "backgroundURL": "https://i.postimg.cc/qB2H2Z7f/KDrama.png"
   },
   {
     "id": "808fc095-87a4-4a3f-90b8-909440f8ff90",
     "title": "Bollywood",
-    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Bollywood_compressed.mp4",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/genres/Bollywood.mp4",
     "backgroundURL": "https://i.postimg.cc/Nfx2MDqG/Bollywood.png"
   },
   {
