@@ -286,5 +286,53 @@
     "title": "Netflix Kids",
     "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/services/netflix%20kids.mp4",
     "backgroundURL": "https://i.postimg.cc/fTZ646GC/netflix-kids.png"
+  },
+  {
+    "id": "d9500bab-cc90-4b05-9e33-898e94e690cf",
+    "title": "Academy Awards",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/awards/academy%20awards.mp4",
+    "backgroundURL": "https://i.postimg.cc/fb4dMhv2/academy-awards.png"
+  },
+  {
+    "id": "039f7b27-9c1d-4069-8ccd-166db8afef9b",
+    "title": "Academy Awards: Best Picture",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/awards/best%20picture.mp4",
+    "backgroundURL": "https://i.postimg.cc/YScFtwxV/best-picture.png"
+  },
+  {
+    "id": "c3873bd2-2cb6-4866-9eea-f2f962162088",
+    "title": "Primetime Emmy Awards",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/awards/emmys.mp4",
+    "backgroundURL": "https://i.postimg.cc/jjz75k8Z/emmys.png"
+  },
+  {
+    "id": "6106af0a-100a-47ca-b7dd-738e42aef900",
+    "title": "Golden Globe Awards",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/awards/golden%20globes.mp4",
+    "backgroundURL": "https://i.postimg.cc/k5xb4hjY/golden-globes.png"
+  },
+  {
+    "id": "7c5c45bf-04b6-40bc-9127-67a52b73bc32",
+    "title": "BAFTA Film Awards",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/awards/bafta.mp4",
+    "backgroundURL": "https://i.postimg.cc/131RtRL3/bafta.png"
+  },
+  {
+    "id": "3efa341e-3584-4d0e-adce-54b18d3c8fa0",
+    "title": "Cannes Film Festival Awards",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/awards/cannes.mp4",
+    "backgroundURL": "https://i.postimg.cc/cJq3dNc2/cannes.png"
+  },
+  {
+    "id": "6d05fbf8-0ab4-4cba-8588-088552795c7d",
+    "title": "Venice Film Festival Awards",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/awards/venice.mp4",
+    "backgroundURL": "https://i.postimg.cc/wBhmvbWb/venice.png"
+  },
+  {
+    "id": "0a492909-97e6-4b73-b1b7-0c0b060776cc",
+    "title": "Berlin International Film Festival Awards",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/awards/berlinale.mp4",
+    "backgroundURL": "https://i.postimg.cc/hGFmKq0N/berlinale.png"
   }
 ]
