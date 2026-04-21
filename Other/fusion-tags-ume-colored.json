@@ -315,7 +315,7 @@
     {
       "groupId": "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
       "id": "a542b0b8-8bec-567a-ac42-50e87ec3e11b",
-      "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/IMAXv2.PNG",
+      "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/refs/heads/main/Other/colored%20regex%20tags/IMAXv2.png",
       "isEnabled": true,
       "name": "IMAX",
       "pattern": "(?i)\\bimax\\b",
