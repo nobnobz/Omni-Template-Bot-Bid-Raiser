@@ -1,0 +1,122 @@
+[
+  {
+    "id": "7289b859-f0bc-4892-8324-5bd8cdeffb02",
+    "title": "Warner Bros. Pictures",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/warner%20bros.mp4",
+    "backgroundURL": "https://i.postimg.cc/65B5yJLY/warner-bros.png"
+  },
+  {
+    "id": "33e973e2-3848-471f-a0de-4aa90be7833e",
+    "title": "Universal Pictures",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/universal.mp4",
+    "backgroundURL": "https://i.postimg.cc/TYTYpMq9/universal.png"
+  },
+  {
+    "id": "f9b99dce-4260-464c-8dc9-64b6bf8c3168",
+    "title": "Paramount Pictures",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/paramount.mp4",
+    "backgroundURL": "https://i.postimg.cc/VLzLdQBX/paramount.png"
+  },
+  {
+    "id": "bc91fa42-b9e6-4976-b6dd-940eca480e1d",
+    "title": "A24",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/a24.mp4",
+    "backgroundURL": "https://i.postimg.cc/WpG1Nbr1/a24.png"
+  },
+  {
+    "id": "3cbf6762-9342-4d6f-a12a-b165275b0960",
+    "title": "Metro-Goldwyn-Mayer",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/mgm.mp4",
+    "backgroundURL": "https://i.postimg.cc/0yNF111W/mgm.png"
+  },
+  {
+    "id": "da35171c-f871-41ef-b39c-1e7c82528ea3",
+    "title": "20th Century Studios",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/20th%20century.mp4",
+    "backgroundURL": "https://i.postimg.cc/QNQd8x5t/20th-century.png"
+  },
+  {
+    "id": "36fdf5db-a55c-47a6-b23d-ae8c7eaa6929",
+    "title": "Columbia Pictures",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/columbia.mp4",
+    "backgroundURL": "https://i.postimg.cc/dQ2Vstd3/columbia.png"
+  },
+  {
+    "id": "783bd799-c7a1-40c5-8c2e-8c1806925af5",
+    "title": "Walt Disney Animation Studio",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/disney.mp4",
+    "backgroundURL": "https://i.postimg.cc/tR34qCP6/disney.png"
+  },
+  {
+    "id": "07b41c11-9870-4ff0-ab2e-5ce334857839",
+    "title": "DreamWorks Animation",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/dreamworks.mp4",
+    "backgroundURL": "https://i.postimg.cc/WpG1Nbrg/dreamworks.png"
+  },
+  {
+    "id": "e196bb7f-4e00-4cf1-ae93-ae983cd31a65",
+    "title": "Pixar Animation Studios",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/pixar.mp4",
+    "backgroundURL": "https://i.postimg.cc/SNmNJF7W/pixar.png"
+  },
+  {
+    "id": "055a8668-5299-4acb-aa0b-d9309e8fa9b5",
+    "title": "Illumination",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/illumination.mp4",
+    "backgroundURL": "https://i.postimg.cc/bYxwyNbb/illumination.png"
+  },
+  {
+    "id": "5bd0c30c-c6f3-4dcd-bd17-ecbbf5ef9e06",
+    "title": "Marvel Studios",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/marvel.mp4",
+    "backgroundURL": "https://i.postimg.cc/CLwLzTHR/marvel.png"
+  },
+  {
+    "id": "b866c5a1-d64d-4608-ba71-595fd9fe9c12",
+    "title": "Lucasfilm",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/lucasfilm.mp4",
+    "backgroundURL": "https://i.postimg.cc/J7Nzr4J3/lucasfilm.png"
+  },
+  {
+    "id": "f9dc89aa-3983-4335-b7e2-004fc5643054",
+    "title": "New Line Cinema",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/new%20line%20cinema.mp4",
+    "backgroundURL": "https://i.postimg.cc/0292bRdw/new-line-cinema.png"
+  },
+  {
+    "id": "b0ffb709-4eca-4025-92da-b7f12cb36eb5",
+    "title": "Miramax",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/miramax.mp4",
+    "backgroundURL": "https://i.postimg.cc/ZKJKCtFB/miramax.png"
+  },
+  {
+    "id": "eee634c5-0067-4df6-9412-f3f63fda305a",
+    "title": "Searchlight Pictures",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/searchlight.mp4",
+    "backgroundURL": "https://i.postimg.cc/xT9TcDyv/searchlight.png"
+  },
+  {
+    "id": "96ddf9b1-db57-4470-8c48-976b0a31b200",
+    "title": "Touchstone Pictures",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/touchstone.mp4",
+    "backgroundURL": "https://i.postimg.cc/PrdrPszb/touchstone.png"
+  },
+  {
+    "id": "2749443c-4c61-4135-858d-ef4204a94dfb",
+    "title": "TriStar Pictures",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/tristar.mp4",
+    "backgroundURL": "https://i.postimg.cc/9FcFr5tb/tristar.png"
+  },
+  {
+    "id": "90eab967-70bd-433c-bafb-21b99f08dcf1",
+    "title": "Lionsgate",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/lionsgate.mp4",
+    "backgroundURL": "https://i.postimg.cc/c1RLx4Yf/lionsgate.png"
+  },
+  {
+    "id": "87730869-a35c-4a2b-afb9-d2ef2236b50b",
+    "title": "Studio Ghibli",
+    "videoURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/animated%20covers/studios/ghibli.MP4",
+    "backgroundURL": "https://i.postimg.cc/tR34qCP1/Bild.png"
+  }
+]
