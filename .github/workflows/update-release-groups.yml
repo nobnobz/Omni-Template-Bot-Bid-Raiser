@@ -30,15 +30,18 @@ jobs:
       - name: Run updater (colored variant)
         run: python scripts/update_release_groups.py --target-file Other/fusion-tags-ume-colored.json
 
+      - name: Run updater (minimalistic variant)
+        run: python scripts/update_release_groups.py --target-file Other/fusion-tags-ume-minimalistic.json
+
       - name: Commit and push if changed
         run: |
-          if [ -z "$(git status --short -- Other/fusion-tags-ume.json Other/fusion-tags-ume-colored.json)" ]; then
+          if [ -z "$(git status --short -- Other/fusion-tags-ume.json Other/fusion-tags-ume-colored.json Other/fusion-tags-ume-minimalistic.json)" ]; then
             echo "No release-group updates found."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Other/fusion-tags-ume.json Other/fusion-tags-ume-colored.json
+          git add Other/fusion-tags-ume.json Other/fusion-tags-ume-colored.json Other/fusion-tags-ume-minimalistic.json
           git commit -m "chore: sync release-group tags"
           git push

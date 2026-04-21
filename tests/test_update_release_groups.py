@@ -12,6 +12,7 @@ from scripts.update_release_groups import (
     extract_groups_from_pattern,
     family_gate,
     merge_source_groups,
+    rewrite_release_group_blocks,
     resolve_template_path,
     resolve_tier_conflicts,
     semantic_source_group_changes,
@@ -35,8 +36,18 @@ class UpdateReleaseGroupsTests(unittest.TestCase):
 
     def test_minimalistic_target_uses_self_template(self):
         self.assertEqual(
-            resolve_template_path(Path("Other/fustion-tags-ume-minimalistic.json"), None),
-            Path("Other/fustion-tags-ume-minimalistic.json"),
+            resolve_template_path(Path("Other/fusion-tags-ume-minimalistic.json"), None),
+            Path("Other/fusion-tags-ume-minimalistic.json"),
+        )
+
+    def test_standard_targets_use_self_templates(self):
+        self.assertEqual(
+            resolve_template_path(Path("Other/fusion-tags-ume.json"), None),
+            Path("Other/fusion-tags-ume.json"),
+        )
+        self.assertEqual(
+            resolve_template_path(Path("Other/fusion-tags-ume-colored.json"), None),
+            Path("Other/fusion-tags-ume-colored.json"),
         )
 
     def test_extract_groups_from_pattern(self):
@@ -193,60 +204,71 @@ class UpdateReleaseGroupsTests(unittest.TestCase):
             re.compile(patterns["WEB 3"]),
         )
 
-    def test_apply_patterns_to_target_uses_template_source_filters(self):
+    def test_apply_patterns_to_target_updates_only_group_blocks(self):
         target = {
             "filters": [
-                _source_filter("REMUX 1"),
-                _source_filter("REMUX 2"),
-                _source_filter("REMUX 3"),
-                _source_filter("REMUX Unranked"),
-                _source_filter("BLU-RAY 1"),
-                _source_filter("BLU-RAY 2"),
-                _source_filter("BLU-RAY 3"),
-                _source_filter("BLU-RAY Unranked"),
-                _source_filter("WEB 1"),
-                _source_filter("WEB 2"),
-                _source_filter("WEB 3"),
-                _source_filter("WEB 4"),
-                _source_filter("WEB 5"),
-                _source_filter("WEB Unranked"),
+                _source_filter("WEB 2")
+                | {
+                    "pattern": (
+                        r"(?i)^(?=.*SOURCE)"
+                        r"(?=.*(?:\[(?:OldA|KeepA)\]|\((?:OldA|KeepA)\)|(?<=-)(?:OldC|KeepC)))"
+                        r"(?!.*(?:BD|UHD))"
+                        r"(?=.*(?:Complete|Full)).*$"
+                    )
+                },
                 {"name": "HDR", "pattern": "hdr", "type": "filter"},
             ]
         }
-        template = {
-            "filters": [_source_filter(name) for name in (
-                "REMUX 1",
-                "REMUX 2",
-                "REMUX 3",
-                "REMUX Unranked",
-                "BLU-RAY 1",
-                "BLU-RAY 2",
-                "BLU-RAY 3",
-                "BLU-RAY 4",
-                "BLU-RAY 5",
-                "BLU-RAY 6",
-                "BLU-RAY 7",
-                "BLU-RAY 8",
-                "BLU-RAY Unranked",
-                "WEB 1",
-                "WEB 2",
-                "WEB 3",
-                "WEB 4",
-                "WEB 5",
-                "WEB 6",
-                "WEB Unranked",
-            )]
+        template = {"filters": [_source_filter("WEB 2")]}
+        generated = {
+            "WEB 2": (
+                r"(?i)^(?=.*SOURCE)"
+                r"(?=.*(?:\[(?:NewA|KeepA)\]|\((?:NewA|KeepA)\)|(?<=-)(?:NewC|KeepC)))"
+                r"(?!.*(?:BD|UHD))"
+                r"(?=.*(?:Complete|Full)).*$"
+            )
         }
-        generated = {name: f"pattern for {name}" for name in [item["name"] for item in template["filters"]]}
 
         updated = apply_patterns_to_target(target, template, generated)
         updated_names = [item["name"] for item in updated["filters"]]
 
-        self.assertIn("BLU-RAY 8", updated_names)
-        self.assertIn("WEB 6", updated_names)
+        self.assertEqual(updated_names, ["WEB 2", "HDR"])
+        web2 = next(item for item in updated["filters"] if item["name"] == "WEB 2")
+        self.assertIn("NewA|KeepA", web2["pattern"])
+        self.assertIn("NewC|KeepC", web2["pattern"])
+        self.assertIn("BD|UHD", web2["pattern"])
+        self.assertIn("Complete|Full", web2["pattern"])
+        self.assertNotIn("OldA|KeepA", web2["pattern"])
+        self.assertNotIn("OldC|KeepC", web2["pattern"])
         self.assertEqual(updated["filters"][-1]["name"], "HDR")
-        web6 = next(item for item in updated["filters"] if item["name"] == "WEB 6")
-        self.assertEqual(web6["pattern"], "pattern for WEB 6")
+
+    def test_rewrite_release_group_blocks_preserves_scaffold(self):
+        current = (
+            r"(?i)^(?=.*SOURCE)"
+            r"(?=.*(?:\[(?:OldA|KeepA)\]|\((?:OldA|KeepA)\)|(?<=-)(?:OldC|KeepC)))"
+            r"(?!.*(?:BD|UHD))"
+            r"(?=.*(?:Complete|Full)).*$"
+        )
+        generated = (
+            r"(?i)^(?=.*SOURCE)"
+            r"(?=.*(?:\[(?:NewA|KeepA)\]|\((?:NewA|KeepA)\)|(?<=-)(?:NewC|KeepC)))"
+            r"(?!.*(?:BD|UHD))"
+            r"(?=.*(?:Complete|Full)).*$"
+        )
+
+        rewritten = rewrite_release_group_blocks(current, generated)
+        self.assertIn("NewA|KeepA", rewritten)
+        self.assertIn("NewC|KeepC", rewritten)
+        self.assertNotIn("OldA|KeepA", rewritten)
+        self.assertNotIn("OldC|KeepC", rewritten)
+        self.assertIn("BD|UHD", rewritten)
+        self.assertIn("Complete|Full", rewritten)
+
+    def test_rewrite_release_group_blocks_keeps_pattern_without_group_slots(self):
+        current = r"(?i)(?:\bWeb[ ._-]?T1\b|ᴡᴇʙ ᴛ₁)"
+        generated = r"(?i)^(?=.*WEBSOURCE)(?=.*(?:\[(?:GroupA|GroupB)\])).*$"
+        rewritten = rewrite_release_group_blocks(current, generated)
+        self.assertEqual(rewritten, current)
 
     def test_extract_family_gates_from_current_source_patterns(self):
         target = {
@@ -261,6 +283,20 @@ class UpdateReleaseGroupsTests(unittest.TestCase):
         self.assertEqual(gates["REMUX"], r"(?=.*REMUXSOURCE)")
         self.assertEqual(gates["BLU-RAY"], r"(?=.*BLURAYSOURCE)(?!.*REMUX)")
         self.assertEqual(gates["WEB"], r"(?=.*WEBSOURCE)(?!.*REMUX)")
+
+    def test_extract_family_gates_falls_back_for_legacy_patterns(self):
+        target = {
+            "filters": [
+                _source_filter("REMUX 1") | {"pattern": r"(?i)(?:\bRemux[ ._-]?T1\b|REMUX T1)"},
+                _source_filter("BLU-RAY 1") | {"pattern": r"(?i)(?:\bBluRay[ ._-]?T1\b|BLU-RAY T1)"},
+                _source_filter("WEB 1") | {"pattern": r"(?i)(?:\bWeb[ ._-]?T1\b|WEB T1)"},
+            ]
+        }
+
+        gates = extract_family_gates(target)
+        self.assertEqual(gates["REMUX"], family_gate("REMUX"))
+        self.assertEqual(gates["BLU-RAY"], family_gate("BLU-RAY"))
+        self.assertEqual(gates["WEB"], family_gate("WEB"))
 
     def test_semantic_change_check_ignores_text_only_gate_differences(self):
         merged = {
