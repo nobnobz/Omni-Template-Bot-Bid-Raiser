@@ -18,9 +18,9 @@ UPSTREAM_URL = "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/E
 DEFAULT_TARGET_PATH = Path("Other/fusion-tags-ume.json")
 
 TARGET_TEMPLATE_MAP = {
-    "fusion-tags-ume.json": Path("Other/fusion-tags-ume-copy.json"),
-    "fusion-tags-ume-colored.json": Path("Other/fusion-tags-ume-colored-copy.json"),
-    "fustion-tags-ume-minimalistic.json": Path("Other/fustion-tags-ume-minimalistic.json"),
+    "fusion-tags-ume.json": Path("Other/fusion-tags-ume.json"),
+    "fusion-tags-ume-colored.json": Path("Other/fusion-tags-ume-colored.json"),
+    "fusion-tags-ume-minimalistic.json": Path("Other/fusion-tags-ume-minimalistic.json"),
 }
 
 FAMILY_TIERS = {
@@ -162,6 +162,69 @@ STRICT_GROUPS = {
     "zr",
 }
 
+GROUP_BLOCK_DENYLIST = {
+    "bd",
+    "uhd",
+    "amzn",
+    "nf",
+    "dp",
+    "web",
+    "webrip",
+    "web-rip",
+    "webmux",
+    "webdl",
+    "web-dl",
+    "webhd",
+    "ituneshd",
+    "maxdomehd",
+    "netflixuhd",
+    "hbomaxhd",
+    "disneyhd",
+    "mkv",
+    "mp4",
+    "avi",
+    "m2ts",
+    "ts",
+    "wmv",
+    "mov",
+    "m4v",
+    "mpg",
+    "mpeg",
+    "iso",
+    "srt",
+    "ass",
+    "ssa",
+    "sub",
+    "idx",
+    "sup",
+    "rar",
+    "zip",
+    "7z",
+    "nfo",
+    "complete",
+    "full",
+    "season",
+    "pack",
+    "hdr",
+    "hdr10",
+    "hdr10plus",
+    "dolbyvision",
+    "dolby",
+    "vision",
+    "dv",
+    "dovi",
+    "remux",
+    "bluray",
+    "blu-ray",
+    "4k",
+    "720",
+    "1080",
+    "2160",
+    "cr",
+    "mux",
+    "rip",
+}
+
 CASE_SENSITIVE_LOWER = {"sigma"}
 
 NON_GROUP_TOKENS = {
@@ -190,6 +253,135 @@ SPECIAL_MULTI_TIER_KEYS = {
     for rule in rules
     for group in rule["groups"]
 }
+
+
+def split_top_level_alternation(text: str) -> List[str]:
+    parts: List[str] = []
+    depth = 0
+    current: List[str] = []
+    index = 0
+
+    while index < len(text):
+        char = text[index]
+        if char == "\\":
+            current.append(text[index : index + 2])
+            index += 2
+            continue
+        if char == "(":
+            depth += 1
+        elif char == ")":
+            depth -= 1
+        elif char == "|" and depth == 0:
+            parts.append("".join(current))
+            current = []
+            index += 1
+            continue
+        current.append(char)
+        index += 1
+
+    parts.append("".join(current))
+    return parts
+
+
+def normalize_release_group_token(token: str) -> str:
+    token = token.strip()
+    if token.startswith("?:"):
+        token = token[2:]
+    if token.startswith("(?-i:") and token.endswith(")"):
+        token = token[5:-1]
+    return token.replace("\\", "")
+
+
+def is_release_group_token(token: str) -> bool:
+    normalized = normalize_release_group_token(token)
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9+._-]*", normalized):
+        return False
+
+    lower = normalized.lower()
+    if lower in GROUP_BLOCK_DENYLIST:
+        return False
+    if lower in STRICT_GROUPS:
+        return True
+    return True
+
+
+def extract_release_group_blocks(pattern: str) -> List[str]:
+    blocks: List[str] = []
+    stack: List[int] = []
+
+    for index, char in enumerate(pattern):
+        if char == "\\":
+            continue
+        if char == "(":
+            stack.append(index)
+            continue
+        if char != ")" or not stack:
+            continue
+
+        start = stack.pop()
+        content = pattern[start + 1 : index]
+        candidate = content[2:] if content.startswith("?:") else content
+        parts = split_top_level_alternation(candidate)
+        if len(parts) > 1 and all(is_release_group_token(part) for part in parts):
+            blocks.append(content)
+
+    seen: set[str] = set()
+    ordered: List[str] = []
+    for block in blocks:
+        if block not in seen:
+            seen.add(block)
+            ordered.append(block)
+    return ordered
+
+
+def block_token_set(block: str) -> set[str]:
+    content = block[2:] if block.startswith("?:") else block
+    return {normalize_release_group_token(part) for part in split_top_level_alternation(content)}
+
+
+def replacement_score(current_tokens: set[str], desired_tokens: set[str]) -> tuple[int, int, int]:
+    overlap = len(current_tokens & desired_tokens)
+    length_delta = abs(len(current_tokens) - len(desired_tokens))
+    return (overlap, -length_delta, -len(desired_tokens))
+
+
+def rewrite_release_group_blocks(current_pattern: str, desired_pattern: str) -> str:
+    current_blocks = extract_release_group_blocks(current_pattern)
+    desired_blocks = extract_release_group_blocks(desired_pattern)
+
+    if not current_blocks or not desired_blocks:
+        return current_pattern
+
+    desired_tokens = {block: block_token_set(block) for block in desired_blocks}
+    used_desired: set[str] = set()
+    replacements: Dict[str, str] = {}
+
+    for current_block in current_blocks:
+        current_tokens = block_token_set(current_block)
+        best_block: str | None = None
+        best_score: tuple[int, int, int] | None = None
+
+        for desired_block in desired_blocks:
+            if desired_block in used_desired:
+                continue
+            score = replacement_score(current_tokens, desired_tokens[desired_block])
+            if best_score is None or score > best_score:
+                best_score = score
+                best_block = desired_block
+
+        if best_block is None or best_score is None or best_score[0] <= 0:
+            continue
+
+        replacements[current_block] = best_block
+        used_desired.add(best_block)
+
+    if not replacements:
+        return current_pattern
+
+    replacement_regex = re.compile(
+        "|".join(re.escape(block) for block in sorted(replacements, key=len, reverse=True))
+    )
+    return replacement_regex.sub(lambda match: replacements[match.group(0)], current_pattern)
 
 
 @dataclass(frozen=True)
@@ -582,7 +774,11 @@ def extract_family_gates(target_json: Dict[str, object]) -> Dict[str, str]:
         if not isinstance(pattern, str):
             raise RuntimeError(f"Target file missing source filter '{first_tier_name}'.")
         if not pattern.startswith("(?i)^"):
-            raise RuntimeError(f"Unexpected source-pattern prefix for '{first_tier_name}'.")
+            # Legacy template files may still use standalone source regexes instead of the generated
+            # source-pattern envelope. In that case, fall back to the default family gate so the
+            # updater can still rebuild the source filters safely.
+            gates[family] = family_gate(family)
+            continue
 
         groups = top_level_group_ranges(pattern)
         if not groups:
@@ -675,39 +871,27 @@ def resolve_template_path(target_path: Path, explicit_template: str | None) -> P
 
 def apply_patterns_to_target(
     target_json: Dict[str, object],
-    template_json: Dict[str, object],
+    _template_json: Dict[str, object],
     generated_patterns: Mapping[str, str],
 ) -> Dict[str, object]:
     target_filters = target_json.get("filters")
-    template_filters = template_json.get("filters")
-    if not isinstance(target_filters, list) or not isinstance(template_filters, list):
+    if not isinstance(target_filters, list):
         raise RuntimeError("Target/template file format changed: top-level 'filters' array missing.")
 
     generated_names = set(generated_patterns)
     new_filters: List[Dict[str, object]] = []
 
-    for item in template_filters:
-        if not isinstance(item, dict):
-            continue
-        name = item.get("name")
-        if not isinstance(name, str) or name not in generated_names:
-            continue
-        new_item = copy.deepcopy(item)
-        new_item["pattern"] = generated_patterns[name]
-        new_filters.append(new_item)
-
-    source_names_present = {item["name"] for item in new_filters if isinstance(item.get("name"), str)}
-    missing = generated_names - source_names_present
-    if missing:
-        raise RuntimeError(f"Template file is missing source filters: {sorted(missing)}")
-
     for item in target_filters:
         if not isinstance(item, dict):
+            new_filters.append(item)
             continue
         name = item.get("name")
-        if isinstance(name, str) and name in generated_names:
-            continue
-        new_filters.append(item)
+        if isinstance(name, str) and name in generated_names and isinstance(item.get("pattern"), str):
+            new_item = copy.deepcopy(item)
+            new_item["pattern"] = rewrite_release_group_blocks(item["pattern"], generated_patterns[name])
+            new_filters.append(new_item)
+        else:
+            new_filters.append(item)
 
     updated = copy.deepcopy(target_json)
     updated["filters"] = new_filters
@@ -729,20 +913,16 @@ def main() -> int:
     gate_overrides = extract_family_gates(target_json)
     generated_patterns = build_family_patterns_with_gates(assignments, gate_overrides)
 
-    semantic_mismatches = semantic_source_group_changes(target_json, generated_patterns, resolved)
-    if not semantic_mismatches:
-        print(f"No release-group changes needed for {target_path}")
-        return 0
-
     updated_json = apply_patterns_to_target(target_json, template_json, generated_patterns)
 
     updated_text = json.dumps(updated_json, indent=2, ensure_ascii=False) + "\n"
     current_text = target_path.read_text(encoding="utf-8")
-    if updated_text != current_text:
-        target_path.write_text(updated_text, encoding="utf-8")
-        print(f"Updated {target_path}")
-    else:
+    if updated_text == current_text:
         print(f"No changes needed for {target_path}")
+        return 0
+
+    target_path.write_text(updated_text, encoding="utf-8")
+    print(f"Updated {target_path}")
 
     return 0
 

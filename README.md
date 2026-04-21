@@ -50,7 +50,7 @@ You can find the following files in this repo and in the **Snapshot Manager** do
 
 The repo also publishes an automatically generated `template-manifest.json` in the root. It is built from the existing template files, so adding a new matching template file updates the manifest without maintaining a separate URL mapping file.
 
-The repo also includes an automated release-group sync for `Other/fusion-tags-ume.json` via `scripts/update_release_groups.py` (run daily in GitHub Actions).
+The repo also includes an automated release-group sync for `Other/fusion-tags-ume.json`, `Other/fusion-tags-ume-colored.json`, and `Other/fusion-tags-ume-minimalistic.json` via `scripts/update_release_groups.py` (run daily in GitHub Actions).
 It downloads upstream regexes, merges mapped Radarr/Sonarr/Web entries into REMUX/BLU-RAY/WEB T1-T3 buckets, applies tier conflict priority (`T1 > T2 > T3 > Unranked`), and rebuilds Unranked exclusion lists from the final deduplicated T1-T3 union.
 
 - **Omni snapshot**  
