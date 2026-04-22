@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-22T17:26:34.484Z",
+  "generatedAt": "2026-04-22T17:27:08.826Z",
   "templates": [
     {
       "id": "ume-omni-template-v3.1.json",
@@ -9,9 +9,9 @@
       "isDefault": true
     },
     {
-      "id": "ume-omni-template-v3.0.json",
+      "id": "Older Versions/v3.0/ume-omni-template-v3.0.json",
       "name": "UME Omni Template v3.0",
-      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-omni-template-v3.0.json",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Older%20Versions/v3.0/ume-omni-template-v3.0.json",
       "version": "v3.0"
     },
     {
