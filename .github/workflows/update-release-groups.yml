@@ -22,7 +22,7 @@ jobs:
           python-version: '3.12'
 
       - name: Run updater tests
-        run: python3 -m unittest discover -s tests
+        run: python3 -m unittest discover -s tests -t .
 
       - name: Run updater
         run: python3 scripts/update_release_groups.py
@@ -31,7 +31,7 @@ jobs:
         run: python3 scripts/update_release_groups.py --target-file Other/fusion-tags-ume-colored.json
 
       - name: Run updater (minimalistic variant)
-        run: python scripts/update_release_groups.py --target-file Other/fusion-tags-ume-minimalistic.json
+        run: python3 scripts/update_release_groups.py --target-file Other/fusion-tags-ume-minimalistic.json
 
       - name: Commit and push if changed
         run: |
