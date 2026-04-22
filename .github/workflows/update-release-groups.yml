@@ -14,21 +14,21 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
       - name: Run updater tests
-        run: python -m unittest discover -s tests
+        run: python3 -m unittest discover -s tests
 
       - name: Run updater
-        run: python scripts/update_release_groups.py
+        run: python3 scripts/update_release_groups.py
 
       - name: Run updater (colored variant)
-        run: python scripts/update_release_groups.py --target-file Other/fusion-tags-ume-colored.json
+        run: python3 scripts/update_release_groups.py --target-file Other/fusion-tags-ume-colored.json
 
       - name: Run updater (minimalistic variant)
         run: python scripts/update_release_groups.py --target-file Other/fusion-tags-ume-minimalistic.json
