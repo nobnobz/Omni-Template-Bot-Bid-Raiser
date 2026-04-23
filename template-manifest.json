@@ -1,6 +1,12 @@
 {
-  "generatedAt": "2026-04-23T11:42:53.524Z",
+  "generatedAt": "2026-04-23T11:51:35.988Z",
   "templates": [
+    {
+      "id": "ume-omni-template-v3.1.1-layout-migration.json",
+      "name": "UME Omni Template v3.1.1",
+      "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-omni-template-v3.1.1-layout-migration.json",
+      "version": "v3.1.1"
+    },
     {
       "id": "ume-omni-template-v3.1.json",
       "name": "UME Omni Template v3.1",

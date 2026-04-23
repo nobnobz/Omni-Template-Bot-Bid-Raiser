@@ -278,6 +278,8 @@ One of the main advantages of the **Snapshot Manager** is that you no longer hav
 
 This makes it much easier to keep your setup current while preserving your own structure and customization.
 
+If Omni does not apply a group layout switch (for example `Studios` staying `Poster`), run one update with `ume-omni-template-v3.1.1-layout-migration.json` first. It forces a one-time migration to `Studios (Landscape)`, then you can switch back to the normal `v3.1` template on the next update.
+
 ---
 
 ## Changelog

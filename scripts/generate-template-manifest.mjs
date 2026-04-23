@@ -285,7 +285,10 @@ function versionToParts(version) {
 
 function getDefaultOmniId(templates) {
   for (const template of templates) {
-    if (getTemplateType(path.basename(template.id)) === "omni") {
+    const isOmni = getTemplateType(path.basename(template.id)) === "omni";
+    const isMigrationTemplate = template.id.toLowerCase().includes("migration");
+
+    if (isOmni && !isMigrationTemplate) {
       return template.id;
     }
   }
