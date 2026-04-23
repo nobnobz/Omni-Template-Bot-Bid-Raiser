@@ -18,3 +18,13 @@ class OmniTemplateLayoutTests(unittest.TestCase):
         self.assertEqual(old_studios_id, new_studios_id)
         self.assertEqual(new_groups[new_studios_id]["posterType"], "Landscape")
         self.assertEqual(v31["values"]["main_group_order"][6], new_studios_id)
+
+    def test_group_id_references_are_consistent(self):
+        v31 = json.loads(Path("ume-omni-template-v3.1.json").read_text(encoding="utf-8"))
+
+        main_groups = json.loads(base64.b64decode(v31["values"]["main_catalog_groups"]["_data"]).decode("utf-8"))
+        subgroup_order = json.loads(base64.b64decode(v31["values"]["subgroup_order"]["_data"]).decode("utf-8"))
+
+        self.assertEqual(set(main_groups.keys()), set(subgroup_order.keys()))
+        self.assertFalse(any(key.startswith("fusion-") for key in main_groups.keys()))
+        self.assertFalse(any(key.startswith("fusion-") for key in subgroup_order.keys()))
