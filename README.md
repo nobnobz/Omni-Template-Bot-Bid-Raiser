@@ -270,6 +270,7 @@ One of the main advantages of the **Snapshot Manager** is that you no longer hav
 5. Review detected additions or changes, such as:
    - new groups
    - new catalogs
+   - catalog layout changes, including landscape/portrait switches
    - updated subgroup content
    - image updates
 6. Import only the changes you want

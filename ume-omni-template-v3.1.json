@@ -12,6 +12,7 @@
     "custom_catalog_names",
     "catalog_group_image_urls",
     "landscape_catalogs",
+    "portrait_catalogs",
     "small_catalogs",
     "hide_addon_info_in_catalog_names",
     "shelf_order",
@@ -360,6 +361,9 @@
     },
     "landscape_catalogs": {
       "_data": "W10="
+    },
+    "portrait_catalogs": {
+      "_data": "WyJtb3ZpZTptZGJsaXN0LjE2MDA0NSIsInNlcmllczptZGJsaXN0LjE2MDA0OCIsIm1vdmllOm1kYmxpc3QuMTYwMDE2Iiwic2VyaWVzOm1kYmxpc3QuMTYwMDE4IiwibW92aWU6bWRibGlzdC4xNjAwMjQiLCJzZXJpZXM6bWRibGlzdC4xNjAwMjkiLCJtb3ZpZTptZGJsaXN0LjE2MDAzMCIsInNlcmllczptZGJsaXN0LjE2MDAzMSIsIm1vdmllOm1kYmxpc3QuMTYwMDMyIiwic2VyaWVzOm1kYmxpc3QuMTYwMDM0IiwibW92aWU6bWRibGlzdC4xNjAwMzUiLCJzZXJpZXM6bWRibGlzdC4xNjAwMzYiLCJtb3ZpZTptZGJsaXN0LjE2MDAzOCIsInNlcmllczptZGJsaXN0LjE2MDAzOSJd"
     },
     "small_catalogs": {
       "_data": "WyJtb3ZpZTptZGJsaXN0LjE2MDA0NSIsInNlcmllczptZGJsaXN0LjE2MDA0OCIsIm1vdmllOm1kYmxpc3QuMTYwMDE2Iiwic2VyaWVzOm1kYmxpc3QuMTYwMDE4IiwibW92aWU6bWRibGlzdC4xNjAwMzIiLCJzZXJpZXM6bWRibGlzdC4xNjAwMjkiLCJtb3ZpZTptZGJsaXN0LjE2MDAyNCIsIm1vdmllOm1kYmxpc3QuMTYwMDMwIiwic2VyaWVzOm1kYmxpc3QuMTYwMDMxIiwic2VyaWVzOm1kYmxpc3QuMTYwMDM0IiwibW92aWU6bWRibGlzdC4xNjAwMzUiLCJzZXJpZXM6bWRibGlzdC4xNjAwMzYiLCJtb3ZpZTptZGJsaXN0LjE2MDAzOCIsInNlcmllczptZGJsaXN0LjE2MDAzOSJd"
