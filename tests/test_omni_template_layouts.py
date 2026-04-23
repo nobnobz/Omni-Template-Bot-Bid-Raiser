@@ -5,18 +5,16 @@ from pathlib import Path
 
 
 class OmniTemplateLayoutTests(unittest.TestCase):
-    def test_portrait_catalogs_tracks_the_non_landscape_catalogs(self):
-        template = json.loads(Path("ume-omni-template-v3.1.json").read_text(encoding="utf-8"))
-        included_keys = template["includedKeys"]
-        values = template["values"]
+    def test_studios_keeps_its_stable_id_when_layout_changes(self):
+        v30 = json.loads(Path("Older Versions/v3.0/ume-omni-template-v3.0.json").read_text(encoding="utf-8"))
+        v31 = json.loads(Path("ume-omni-template-v3.1.json").read_text(encoding="utf-8"))
 
-        self.assertIn("portrait_catalogs", included_keys)
+        old_groups = json.loads(base64.b64decode(v30["values"]["main_catalog_groups"]["_data"]).decode("utf-8"))
+        new_groups = json.loads(base64.b64decode(v31["values"]["main_catalog_groups"]["_data"]).decode("utf-8"))
 
-        selected = set(json.loads(base64.b64decode(values["selected_catalogs"]["_data"]).decode("utf-8")))
-        landscape = set(json.loads(base64.b64decode(values["landscape_catalogs"]["_data"]).decode("utf-8")))
-        portrait = set(json.loads(base64.b64decode(values["portrait_catalogs"]["_data"]).decode("utf-8")))
+        old_studios_id = next(key for key, value in old_groups.items() if value["name"] == "Studios")
+        new_studios_id = next(key for key, value in new_groups.items() if value["name"] == "Studios")
 
-        self.assertTrue(portrait, "portrait_catalogs should not be empty")
-        self.assertTrue(portrait.isdisjoint(landscape))
-        self.assertEqual(selected, portrait | landscape)
-
+        self.assertEqual(old_studios_id, new_studios_id)
+        self.assertEqual(new_groups[new_studios_id]["posterType"], "Landscape")
+        self.assertEqual(v31["values"]["main_group_order"][6], new_studios_id)
