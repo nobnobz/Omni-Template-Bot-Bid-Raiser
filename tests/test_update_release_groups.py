@@ -131,6 +131,7 @@ class UpdateReleaseGroupsTests(unittest.TestCase):
                 self.assertEqual(sdr["groupId"], "6ba7b810-9dad-11d1-80b4-00c04fd430c8")
                 self.assertEqual(sdr["imageURL"], image_url)
                 self.assertEqual(sdr["name"], "SDR")
+                self.assertFalse(sdr["isEnabled"])
 
                 pattern = re.compile(sdr["pattern"])
                 for sample in matches:
