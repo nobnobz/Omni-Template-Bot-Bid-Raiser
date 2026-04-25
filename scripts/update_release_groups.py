@@ -125,8 +125,8 @@ REMUX_DETECTOR = (
     r"(?:(?:BD|UHD)[-_. ]?)?Remux[_. ]\d{4}p)"
 )
 BLURAY_DETECTOR = (
-    r"(?:(?:BluRay|Blu-Ray|HD-?DVD|BDMux|BD(?!$)|UHD|4K|bd(?:720|1080|2160)|"
-    r"(?<=[-_. (\[])bd(?=[-_. )\]])|DVD|DVDRip|NTSC|PAL|xvidvd))"
+    r"(?:(?:BluRay|Blu-Ray|HD-?DVD|BDMux|(?<=[-_. (\[])BD(?=[-_. )\]])|UHD|4K|bd(?:720|1080|2160)|"
+    r"DVD|DVDRip|NTSC|PAL|xvidvd))"
 )
 WEB_DETECTOR = (
     r"(?:(?:WEB[-_. ]DL(?:mux)?|WEBDL|AmazonHD|AmazonSD|iTunesHD|MaxdomeHD|NetflixU?HD|"

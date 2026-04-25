@@ -1,3 +1,4 @@
+import json
 import re
 import unittest
 from pathlib import Path
@@ -27,6 +28,14 @@ def _source_filter(name: str) -> dict:
         "groupId": "source-group",
         "id": name.lower().replace(" ", "-"),
     }
+
+
+def _load_filter(path: Path, name: str) -> dict:
+    data = json.loads(path.read_text())
+    for item in data["filters"]:
+        if item.get("name") == name:
+            return item
+    raise AssertionError(f"Missing filter {name!r} in {path}")
 
 
 class UpdateReleaseGroupsTests(unittest.TestCase):
@@ -63,6 +72,71 @@ class UpdateReleaseGroupsTests(unittest.TestCase):
             extract_groups_from_pattern(pattern),
             ["Moxie", "smol", "SoM", "DemiHuman", "FLE", "Flugel", "LYS1TH3A", "ZR", "NAN0"],
         )
+
+    def test_bluray_gate_requires_token_boundaries(self):
+        pattern = re.compile(family_gate("BLU-RAY"))
+
+        for sample in [
+            "Movie.1080p.BluRay.x264-GROUP.mkv",
+            "Movie.1080p.Blu-Ray.x264-GROUP.mkv",
+            "Movie.1080p.BD.x264-GROUP.mkv",
+            "Movie-1080p-BD-x264-GROUP.mkv",
+            "Movie [BD] x264 GROUP.mkv",
+            "Movie.1080p.BDMux.x264-GROUP.mkv",
+        ]:
+            self.assertRegex(sample, pattern)
+
+        for sample in [
+            "My.RiBDiculous.Reincarnation.S01E01.The.Heros.Rib.1080p.CR.WEB-DL.JPN.AAC2.0.H.264.MSubs-ToonsHub.mkv",
+            "My Ribdiculous Reincarnation S01E01 The Heros Rib 1080p CR WEB-DL DDP2 0 H 264-Kitsune.mkv",
+        ]:
+            self.assertNotRegex(sample, pattern)
+
+    def test_sdr_filters_fallback_only_when_hdr_tags_are_absent(self):
+        cases = [
+            (
+                Path("Other/fusion-tags-ume.json"),
+                "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/regex%20tags/sdr.png",
+            ),
+            (
+                Path("Other/fusion-tags-ume-colored.json"),
+                "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/colored%20regex%20tags/sdr.png",
+            ),
+            (
+                Path("Other/fusion-tags-ume-minimalistic.json"),
+                "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/white%20regex%20tags/white_sdr.png",
+            ),
+        ]
+
+        matches = [
+            "Movie.1080p.WEB-DL.H264-GROUP.mkv",
+            "Movie.1080p.BluRay.x264-GROUP.mkv",
+            "Movie.1080p.WEB-DL.DDP5.1.H.264-GROUP.mkv",
+            "Movie.DVDRip.x264-GROUP.mkv",
+        ]
+        non_matches = [
+            "Movie.2160p.WEB-DL.DV.H265-GROUP.mkv",
+            "Movie.2160p.WEB-DL.DoVi.H265-GROUP.mkv",
+            "Movie.2160p.WEB-DL.Dolby.Vision.H265-GROUP.mkv",
+            "Movie.2160p.WEB-DL.HDR.H265-GROUP.mkv",
+            "Movie.2160p.WEB-DL.HDR10.H265-GROUP.mkv",
+            "Movie.2160p.WEB-DL.HDR10+.H265-GROUP.mkv",
+            "Movie.2160p.WEB-DL.HDR10Plus.H265-GROUP.mkv",
+            "Movie.2160p.WEB-DL.HLG.H265-GROUP.mkv",
+        ]
+
+        for path, image_url in cases:
+            with self.subTest(path=path):
+                sdr = _load_filter(path, "SDR")
+                self.assertEqual(sdr["groupId"], "6ba7b810-9dad-11d1-80b4-00c04fd430c8")
+                self.assertEqual(sdr["imageURL"], image_url)
+                self.assertEqual(sdr["name"], "SDR")
+
+                pattern = re.compile(sdr["pattern"])
+                for sample in matches:
+                    self.assertRegex(sample, pattern)
+                for sample in non_matches:
+                    self.assertNotRegex(sample, pattern)
 
     def test_merge_entries_supports_copy_tiers(self):
         entries = [
