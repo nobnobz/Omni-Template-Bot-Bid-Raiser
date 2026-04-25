@@ -113,6 +113,8 @@ class UpdateReleaseGroupsTests(unittest.TestCase):
             "Movie.1080p.BluRay.x264-GROUP.mkv",
             "Movie.1080p.WEB-DL.DDP5.1.H.264-GROUP.mkv",
             "Movie.DVDRip.x264-GROUP.mkv",
+            "Movie.1080p.Blu-Ray.x265-GROUP.mkv",
+            "Movie.1080p.BDRip.HEVC-GROUP.mkv",
         ]
         non_matches = [
             "Movie.2160p.WEB-DL.DV.H265-GROUP.mkv",
@@ -123,6 +125,7 @@ class UpdateReleaseGroupsTests(unittest.TestCase):
             "Movie.2160p.WEB-DL.HDR10+.H265-GROUP.mkv",
             "Movie.2160p.WEB-DL.HDR10Plus.H265-GROUP.mkv",
             "Movie.2160p.WEB-DL.HLG.H265-GROUP.mkv",
+            "Movie.2160p.NoSourceMarker",
         ]
 
         for path, image_url in cases:

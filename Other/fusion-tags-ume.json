@@ -408,7 +408,7 @@
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/regex%20tags/sdr.png",
       "isEnabled": false,
       "name": "SDR",
-      "pattern": "(?i)^(?!.*(?:\\b(?:dovi|dolby[ ._-]?vision)\\b|\\bdv\\b|\\bhdr\\s*10\\s*(?:\\+|plus|p)\\b|\\bhdr10(?:\\+|plus|p)?\\b|\\bhdr\\b|\\bhlg\\b)).*$",
+      "pattern": "(?i)^(?=.*(?:\\.(?:mkv|mp4|avi|mov|m4v)\\b|\\b(?:x264|x265|h[ ._-]?264|h[ ._-]?265|hevc|avc|web[-_. ]?dl|webrip|blu[-_. ]?ray|bdrip|bdmux)\\b))(?!.*(?:^|[^A-Za-z0-9])(?:dovi|dv|dolby[ ._-]?vision|hdr10(?:\\+|plus|p)?|hdr[ ._-]?10[ ._-]?(?:\\+|plus|p)?|hdr|hlg)(?=$|[^A-Za-z0-9])).*$",
       "tagColor": "#FFBE01",
       "tagStyle": "filled",
       "textColor": "#0e0e0e",
