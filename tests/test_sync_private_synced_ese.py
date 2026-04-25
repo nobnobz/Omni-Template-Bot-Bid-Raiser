@@ -22,6 +22,8 @@ class SyncPrivateSyncedESETests(unittest.TestCase):
                 "/*Upscaled 4k*/local-upscaled",
                 "/*Bad 4k Bluray*/local-bad-bluray",
                 "/*Bad 1080P Bluray*/local-bad-1080",
+                "/*Unknown Resolution*/local-unknown-resolution",
+                "/*Unknown Quality*/local-unknown-quality",
                 "/*⚠️ Bad NZBs*/keep-me",
                 "/*⚠️ Extra Cached (HQ)*/keep-me-too",
             ],
@@ -40,6 +42,8 @@ class SyncPrivateSyncedESETests(unittest.TestCase):
             {"expression": "/*Upscaled 4k*/upstream-upscaled", "enabled": True},
             {"expression": "/*Bad 4k Bluray*/upstream-bad-bluray", "enabled": True},
             {"expression": "/*Bad 1080P Bluray*/upstream-bad-1080", "enabled": True},
+            {"expression": "/*Unknown Resolution*/upstream-unknown-resolution", "enabled": True},
+            {"expression": "/*Unknown Quality*/upstream-unknown-quality", "enabled": True},
             {"expression": "/*⚠️ Bad NZBs*/upstream-warning", "enabled": True},
         ]
 
@@ -49,7 +53,7 @@ class SyncPrivateSyncedESETests(unittest.TestCase):
         self.assertEqual(missing, ["No Sootio Library"])
         self.assertEqual(target["metadata"]["version"], "1.2.6")
         self.assertEqual(
-            target["values"][:8],
+            target["values"][:10],
             [
                 "/*G's Low Bitrate*/upstream-g",
                 "/*ongoingSeasonPack*/upstream-ongoing",
@@ -59,10 +63,12 @@ class SyncPrivateSyncedESETests(unittest.TestCase):
                 "/*Upscaled 4k*/upstream-upscaled",
                 "/*Bad 4k Bluray*/upstream-bad-bluray",
                 "/*Bad 1080P Bluray*/upstream-bad-1080",
+                "/*Unknown Resolution*/upstream-unknown-resolution",
+                "/*Unknown Quality*/upstream-unknown-quality",
             ],
         )
-        self.assertEqual(target["values"][8], original["values"][8])
-        self.assertEqual(target["values"][9], original["values"][9])
+        self.assertEqual(target["values"][10], original["values"][10])
+        self.assertEqual(target["values"][11], original["values"][11])
 
     def test_missing_target_rule_raises_helpful_error(self):
         target = {"metadata": {"version": "1.2.5"}, "values": ["/*G's Low Bitrate*/local-g"]}

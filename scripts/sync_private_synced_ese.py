@@ -25,6 +25,8 @@ TARGET_RULE_LABELS = (
     "Upscaled 4k",
     "Bad 4k Bluray",
     "Bad 1080P Bluray",
+    "Unknown Resolution",
+    "Unknown Quality",
 )
 
 VERSION_LABEL_PREFIX = "Standard ESE"
