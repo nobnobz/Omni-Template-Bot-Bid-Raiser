@@ -115,6 +115,8 @@ class UpdateReleaseGroupsTests(unittest.TestCase):
             "Movie.DVDRip.x264-GROUP.mkv",
             "Movie.1080p.Blu-Ray.x265-GROUP.mkv",
             "Movie.1080p.BDRip.HEVC-GROUP.mkv",
+            "Movie.1080p.BD-Remux.x264-GROUP.mkv",
+            "Movie.1080p.xvid-GROUP.avi",
         ]
         non_matches = [
             "Movie.2160p.WEB-DL.DV.H265-GROUP.mkv",
