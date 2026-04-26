@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-26T06:33:08.135Z",
+  "generatedAt": "2026-04-26T06:52:24.849Z",
   "templates": [
     {
       "id": "ume-omni-template-v3.1.json",
@@ -28,9 +28,9 @@
     },
     {
       "id": "ume-aiostreams-template.json",
-      "name": "UME AIOStreams Template v2.3.0",
+      "name": "UME AIOStreams Template v3.0.0",
       "url": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/ume-aiostreams-template.json",
-      "version": "v2.3.0"
+      "version": "v3.0.0"
     },
     {
       "id": "Older Versions/v2.2/ume-omni-template-v2.2.1.json",
