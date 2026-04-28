@@ -24,25 +24,12 @@ jobs:
       - name: Resolve latest omni template
         run: |
           latest_template="$(
-            python3 - <<'PY'
-from pathlib import Path
-import re
-
-pattern = re.compile(r"^ume-omni-template-v(\d+(?:\.\d+)*)\.json$")
-candidates = []
-for path in Path(".").glob("ume-omni-template-v*.json"):
-    match = pattern.match(path.name)
-    if not match:
-        continue
-    version = tuple(int(part) for part in match.group(1).split("."))
-    candidates.append((version, path.as_posix()))
-
-if not candidates:
-    raise SystemExit("No ume-omni-template-v*.json files found.")
-
-print(max(candidates, key=lambda item: item[0])[1])
-PY
+            python3 -c "import pathlib,re; c=[(tuple(map(int,m.group(1).split('.'))),p.as_posix()) for p in pathlib.Path('.').glob('ume-omni-template-v*.json') if (m:=re.match(r'^ume-omni-template-v(\\d+(?:\\.\\d+)*)\\.json$', p.name))]; print(max(c, key=lambda x: x[0])[1] if c else '')"
           )"
+          if [ -z "$latest_template" ]; then
+            echo "No ume-omni-template-v*.json files found."
+            exit 1
+          fi
           echo "OMNI_TEMPLATE_FILE=$latest_template" >> "$GITHUB_ENV"
           echo "Using template: $latest_template"
 
