@@ -21,6 +21,31 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Resolve latest omni template
+        run: |
+          latest_template="$(
+            python3 - <<'PY'
+from pathlib import Path
+import re
+
+pattern = re.compile(r"^ume-omni-template-v(\d+(?:\.\d+)*)\.json$")
+candidates = []
+for path in Path(".").glob("ume-omni-template-v*.json"):
+    match = pattern.match(path.name)
+    if not match:
+        continue
+    version = tuple(int(part) for part in match.group(1).split("."))
+    candidates.append((version, path.as_posix()))
+
+if not candidates:
+    raise SystemExit("No ume-omni-template-v*.json files found.")
+
+print(max(candidates, key=lambda item: item[0])[1])
+PY
+          )"
+          echo "OMNI_TEMPLATE_FILE=$latest_template" >> "$GITHUB_ENV"
+          echo "Using template: $latest_template"
+
       - name: Run updater tests
         run: python3 -m unittest discover -s tests -t .
 
