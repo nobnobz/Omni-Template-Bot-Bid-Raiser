@@ -3,7 +3,7 @@
     "name": "excludedStreamExpressions (Standard)",
     "author": "Bot-Bid-Raiser",
     "description": "Bot-Bid-Raiser synced ESEs for Omni based on Tams Excluded SEL template: https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-ESEs-standard.json",
-    "version": "1.2.7"
+    "version": "1.2.8"
   },
   "values": [
     "/*No DV Bluray (P7)*/ negate(rseMatched(streams, 'Hybrid'),merge(quality(visualTag(resolution(streams, '2160p'), 'DV'), 'Bluray Remux', 'Bluray')))",
