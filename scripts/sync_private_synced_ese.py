@@ -32,6 +32,9 @@ TARGET_RULE_LABELS = (
 VERSION_LABEL_PREFIX = "Standard ESE"
 COMMENT_RE = re.compile(r"^/\*([^*]+)\*/")
 VERSION_RE = re.compile(r"v(\d+(?:\.\d+)*)")
+UPSTREAM_LABEL_ALIASES = {
+    "Extra SeaDex": ("SeaDex Duplicates",),
+}
 
 
 def main() -> int:
@@ -110,15 +113,19 @@ def sync_target_data(target_data: dict, upstream_entries: Iterable[dict]) -> tup
     changed = False
     missing_local_rules: list[str] = []
     for label in TARGET_RULE_LABELS:
-        if label not in upstream_by_label:
+        lookup_labels = (label, *UPSTREAM_LABEL_ALIASES.get(label, ()))
+        upstream_expression = next(
+            (upstream_by_label[candidate] for candidate in lookup_labels if candidate in upstream_by_label),
+            None,
+        )
+        if upstream_expression is None:
             raise RuntimeError(f"missing upstream rule {label!r}")
 
-        index = find_value_index(values, label)
+        index = find_value_index(values, lookup_labels)
         if index is None:
             missing_local_rules.append(label)
             continue
 
-        upstream_expression = upstream_by_label[label]
         if not isinstance(upstream_expression, str):
             raise RuntimeError(f"upstream rule {label!r} does not contain an expression string")
 
@@ -160,9 +167,10 @@ def extract_label(expression: object) -> str | None:
     return match.group(1).strip()
 
 
-def find_value_index(values: list, label: str) -> int | None:
+def find_value_index(values: list, labels: Iterable[str]) -> int | None:
+    labels_set = set(labels)
     for index, value in enumerate(values):
-        if extract_label(value) == label:
+        if extract_label(value) in labels_set:
             return index
     return None
 
